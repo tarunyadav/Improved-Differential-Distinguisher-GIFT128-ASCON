@@ -1,0 +1,1941 @@
+CIPHER_NAME=GIFT128; num_rounds=7,ml_rounds=7,class_data=2**0,bit_size=128,loop=50,n_test=2**16,validate=False
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^16 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0 | TP_Random Accuracy: 0 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Calculating Accuracies for Real and Random Case: 
+2048/2048 [==============================] - 1s 326us/step - loss: 0.6828 - accuracy: 0.5467
+loss= 0.6828005909919739
+acc= 0.54669189453125
+All Real Case: 
+2048/2048 [==============================] - 1s 286us/step
+2048/2048 [==============================] - 1s 289us/step
+2048/2048 [==============================] - 1s 289us/step
+2048/2048 [==============================] - 1s 283us/step
+2048/2048 [==============================] - 1s 287us/step
+2048/2048 [==============================] - 1s 291us/step
+2048/2048 [==============================] - 1s 311us/step
+2048/2048 [==============================] - 1s 321us/step
+2048/2048 [==============================] - 1s 315us/step
+2048/2048 [==============================] - 1s 306us/step
+TP Accuracy: 0.383209228515625
+All Random Case: 
+2048/2048 [==============================] - 1s 308us/step
+2048/2048 [==============================] - 1s 308us/step
+2048/2048 [==============================] - 1s 305us/step
+2048/2048 [==============================] - 1s 311us/step
+2048/2048 [==============================] - 1s 316us/step
+2048/2048 [==============================] - 1s 318us/step
+2048/2048 [==============================] - 1s 306us/step
+2048/2048 [==============================] - 1s 304us/step
+2048/2048 [==============================] - 1s 305us/step
+2048/2048 [==============================] - 1s 306us/step
+TP Accuracy: 0.293548583984375
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^2 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.70it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.95it/s]
+Prediction Results (All Real Data): 
+[2, 0, 2, 0, 1, 2, 1, 1, 2, 3, 2, 2, 1, 0, 2, 1, 1, 1, 2, 2, 3, 2, 1, 1, 3, 1, 1, 3, 0, 3, 1, 1, 1, 3, 0, 1, 2, 2, 2, 1, 2, 3, 1, 3, 1, 3, 2, 1, 3, 0]
+Prediction Results (All Random Data): 
+[2, 0, 2, 1, 1, 3, 1, 1, 2, 3, 0, 1, 0, 1, 1, 1, 2, 2, 0, 0, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1, 2, 1, 2, 0, 0, 2, 2, 1, 1, 1, 2, 1, 1, 0, 1]
+Average TP in All Real Data: 1.58
+Average TP in All Random Data: 1.16
+Difference in Average TP Data (Real-Random): 0.42000000000000015
+Min TP in All Real Data: 0
+Max TP in All Random Data: 3
+Difference in Min_Real-Max_Random: -3
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 0.358642578125 | Cutoff Using Graph (Algo 3): 1 | Cutoff Calculated (Algo 4): 2 | Data Used: 2^2
+
+Results for Cutoff Using Graph (Algo 3):  1
+TP_Real Count: 25 | TP_Random Count: 35 | Accuracy: 60%
+
+Results for Cutoff Calculated (Algo 4):  2
+TP_Real Count: 10 | TP_Random Count: 48 | Accuracy: 58%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^3 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.84it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.29it/s]
+Prediction Results (All Real Data): 
+[2, 1, 4, 3, 4, 4, 3, 2, 6, 5, 5, 4, 2, 3, 3, 2, 3, 1, 2, 3, 6, 3, 2, 4, 3, 3, 2, 5, 2, 1, 3, 3, 7, 4, 3, 4, 2, 4, 2, 3, 2, 2, 1, 4, 3, 2, 1, 3, 2, 3]
+Prediction Results (All Random Data): 
+[1, 3, 2, 1, 2, 2, 2, 2, 1, 4, 5, 4, 3, 5, 3, 2, 2, 4, 2, 2, 2, 2, 3, 1, 3, 1, 2, 5, 1, 3, 2, 1, 3, 2, 1, 1, 3, 3, 2, 1, 0, 3, 1, 4, 2, 1, 2, 3, 6, 5]
+Average TP in All Real Data: 3.02
+Average TP in All Random Data: 2.42
+Difference in Average TP Data (Real-Random): 0.6000000000000001
+Min TP in All Real Data: 1
+Max TP in All Random Data: 6
+Difference in Min_Real-Max_Random: -5
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 0.71728515625 | Cutoff Using Graph (Algo 3): 3 | Cutoff Calculated (Algo 4): 3 | Data Used: 2^3
+
+Results for Cutoff Using Graph (Algo 3):  3
+TP_Real Count: 15 | TP_Random Count: 41 | Accuracy: 56%
+
+Results for Cutoff Calculated (Algo 4):  3
+TP_Real Count: 15 | TP_Random Count: 41 | Accuracy: 56%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^4 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.97it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 36.67it/s]
+Prediction Results (All Real Data): 
+[5, 4, 3, 8, 5, 5, 7, 5, 5, 5, 7, 10, 7, 7, 6, 5, 10, 4, 6, 8, 7, 5, 5, 7, 8, 10, 5, 8, 6, 9, 8, 7, 6, 3, 5, 8, 7, 3, 5, 4, 9, 4, 8, 8, 7, 6, 9, 8, 9, 6]
+Prediction Results (All Random Data): 
+[7, 4, 3, 2, 6, 8, 6, 4, 5, 5, 4, 4, 6, 4, 6, 3, 4, 4, 4, 5, 2, 4, 3, 6, 6, 7, 3, 3, 6, 5, 3, 7, 4, 7, 6, 4, 5, 3, 6, 6, 6, 6, 4, 1, 3, 3, 6, 3, 4, 4]
+Average TP in All Real Data: 6.44
+Average TP in All Random Data: 4.6
+Difference in Average TP Data (Real-Random): 1.8400000000000007
+Min TP in All Real Data: 3
+Max TP in All Random Data: 8
+Difference in Min_Real-Max_Random: -5
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 1.4345703125 | Cutoff Using Graph (Algo 3): 5 | Cutoff Calculated (Algo 4): 6 | Data Used: 2^4
+
+Results for Cutoff Using Graph (Algo 3):  5
+TP_Real Count: 31 | TP_Random Count: 32 | Accuracy: 63%
+
+Results for Cutoff Calculated (Algo 4):  6
+TP_Real Count: 25 | TP_Random Count: 45 | Accuracy: 70%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^5 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 39.30it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 40.18it/s]Prediction Results (All Real Data): 
+[14, 13, 9, 14, 19, 10, 8, 13, 10, 14, 9, 19, 10, 9, 12, 12, 12, 12, 7, 11, 13, 10, 18, 14, 11, 9, 14, 12, 17, 17, 12, 10, 16, 11, 13, 12, 14, 8, 9, 10, 10, 12, 16, 15, 12, 12, 13, 16, 12, 13]
+Prediction Results (All Random Data): 
+[15, 3, 9, 7, 12, 10, 5, 10, 15, 9, 12, 7, 8, 9, 12, 8, 11, 10, 10, 15, 11, 9, 15, 8, 5, 11, 13, 7, 7, 10, 13, 7, 9, 5, 13, 11, 10, 9, 11, 9, 12, 7, 9, 11, 9, 10, 9, 12, 10, 7]
+Average TP in All Real Data: 12.36
+Average TP in All Random Data: 9.72
+Difference in Average TP Data (Real-Random): 2.639999999999999
+Min TP in All Real Data: 7
+Max TP in All Random Data: 15
+Difference in Min_Real-Max_Random: -8
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 2.869140625 | Cutoff Using Graph (Algo 3): 11 | Cutoff Calculated (Algo 4): 11 | Data Used: 2^5
+
+
+Results for Cutoff Using Graph (Algo 3):  11
+TP_Real Count: 32 | TP_Random Count: 38 | Accuracy: 70%
+
+Results for Cutoff Calculated (Algo 4):  11
+TP_Real Count: 32 | TP_Random Count: 38 | Accuracy: 70%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^6 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 38.08it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 38.75it/s]Prediction Results (All Real Data): 
+[26, 24, 26, 31, 26, 23, 31, 23, 22, 24, 29, 30, 19, 30, 29, 24, 28, 24, 32, 24, 32, 24, 23, 22, 21, 31, 28, 27, 28, 23, 22, 34, 24, 29, 24, 30, 26, 28, 26, 17, 21, 28, 23, 39, 26, 18, 21, 28, 29, 29]
+Prediction Results (All Random Data): 
+[18, 23, 22, 24, 22, 20, 23, 20, 12, 16, 18, 22, 19, 17, 18, 16, 16, 17, 18, 17, 20, 14, 17, 18, 16, 16, 18, 18, 16, 20, 17, 20, 18, 21, 17, 17, 18, 19, 23, 20, 27, 24, 28, 17, 18, 19, 18, 22, 22, 15]
+Average TP in All Real Data: 26.12
+Average TP in All Random Data: 19.02
+Difference in Average TP Data (Real-Random): 7.100000000000001
+Min TP in All Real Data: 17
+Max TP in All Random Data: 28
+Difference in Min_Real-Max_Random: -11
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 5.73828125 | Cutoff Using Graph (Algo 3): 22 | Cutoff Calculated (Algo 4): 22 | Data Used: 2^6
+
+
+Results for Cutoff Using Graph (Algo 3):  22
+TP_Real Count: 41 | TP_Random Count: 43 | Accuracy: 84%
+
+Results for Cutoff Calculated (Algo 4):  22
+TP_Real Count: 41 | TP_Random Count: 43 | Accuracy: 84%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^7 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 36.84it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.11it/s]
+Prediction Results (All Real Data): 
+[56, 57, 49, 50, 48, 49, 50, 47, 48, 49, 50, 47, 46, 51, 53, 48, 52, 48, 51, 56, 51, 51, 58, 36, 56, 47, 54, 53, 54, 49, 47, 57, 48, 53, 54, 54, 48, 49, 50, 40, 55, 58, 45, 43, 50, 46, 49, 46, 40, 42]
+Prediction Results (All Random Data): 
+[30, 33, 40, 37, 36, 35, 33, 38, 31, 33, 32, 37, 40, 32, 45, 30, 35, 30, 36, 37, 39, 36, 42, 36, 47, 42, 31, 32, 35, 44, 34, 39, 41, 42, 30, 41, 43, 42, 33, 38, 22, 38, 31, 37, 35, 40, 39, 32, 34, 33]
+Average TP in All Real Data: 49.76
+Average TP in All Random Data: 36.16
+Difference in Average TP Data (Real-Random): 13.600000000000001
+Min TP in All Real Data: 36
+Max TP in All Random Data: 47
+Difference in Min_Real-Max_Random: -11
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 11.4765625 | Cutoff Using Graph (Algo 3): 41 | Cutoff Calculated (Algo 4): 44 | Data Used: 2^7
+
+Results for Cutoff Using Graph (Algo 3):  41
+TP_Real Count: 47 | TP_Random Count: 42 | Accuracy: 89%
+
+Results for Cutoff Calculated (Algo 4):  44
+TP_Real Count: 45 | TP_Random Count: 48 | Accuracy: 93%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^8 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.80it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 34.55it/s]
+Prediction Results (All Real Data): 
+[110, 89, 105, 93, 101, 99, 110, 94, 104, 94, 97, 92, 109, 116, 96, 104, 90, 101, 98, 113, 107, 91, 102, 87, 86, 103, 88, 107, 82, 90, 95, 102, 95, 95, 104, 91, 94, 87, 98, 95, 99, 107, 85, 103, 97, 112, 85, 102, 102, 97]
+Prediction Results (All Random Data): 
+[67, 67, 84, 78, 77, 60, 82, 84, 72, 84, 91, 60, 79, 73, 83, 70, 80, 73, 78, 90, 91, 68, 67, 77, 71, 70, 70, 61, 76, 79, 76, 71, 60, 94, 64, 73, 79, 77, 69, 69, 72, 76, 69, 70, 70, 76, 77, 87, 64, 62]
+Average TP in All Real Data: 98.06
+Average TP in All Random Data: 74.34
+Difference in Average TP Data (Real-Random): 23.72
+Min TP in All Real Data: 82
+Max TP in All Random Data: 94
+Difference in Min_Real-Max_Random: -12
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 22.953125 | Cutoff Using Graph (Algo 3): 88 | Cutoff Calculated (Algo 4): 87 | Data Used: 2^8
+
+Results for Cutoff Using Graph (Algo 3):  88
+TP_Real Count: 43 | TP_Random Count: 46 | Accuracy: 89%
+
+Results for Cutoff Calculated (Algo 4):  87
+TP_Real Count: 44 | TP_Random Count: 46 | Accuracy: 90%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | TP_Real Accuracy: 0.383209228515625 | TP_Random Accuracy: 0.293548583984375 | Number of Experiments: 100
+
+./saved_model_paper/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.14it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.63it/s]Prediction Results (All Real Data): 
+[213, 183, 189, 196, 215, 195, 209, 194, 204, 183, 212, 211, 201, 212, 195, 203, 199, 210, 189, 185, 188, 204, 201, 218, 183, 187, 219, 191, 208, 200, 204, 201, 212, 202, 194, 193, 212, 199, 221, 199, 191, 191, 189, 205, 212, 211, 186, 205, 199, 191]
+Prediction Results (All Random Data): 
+[145, 151, 145, 160, 148, 160, 155, 144, 149, 148, 136, 149, 157, 172, 158, 148, 156, 140, 171, 158, 142, 160, 136, 140, 169, 166, 160, 144, 153, 145, 144, 153, 156, 139, 152, 140, 154, 157, 132, 162, 160, 142, 144, 156, 155, 147, 145, 141, 149, 143]
+Average TP in All Real Data: 200.28
+Average TP in All Random Data: 150.72
+Difference in Average TP Data (Real-Random): 49.56
+Min TP in All Real Data: 183
+Max TP in All Random Data: 172
+Difference in Min_Real-Max_Random: 11
+Difference in Accuracy: 0.08966064453125 | Data Difference Expected (based on accuracy): 45.90625 | Cutoff Using Graph (Algo 3): 177 | Cutoff Calculated (Algo 4): 174 | Data Used: 2^9
+
+
+Results for Cutoff Using Graph (Algo 3):  177
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
+Results for Cutoff Calculated (Algo 4):  174
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+CIPHER_NAME=GIFT128; num_rounds=7,ml_rounds=7,class_data=2**0,bit_size=128,loop=50,n_test=2**16,validate=True,beta= 2**9,C_T=175
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.29it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.73it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 48 | TP_Random Count: 50 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.51it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.25it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.00it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.44it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.52it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.73it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 29.74it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.18it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 28.17it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.35it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.24it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.23it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.87it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.78it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.99it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.29it/s]
+
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.55 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_7_00000000000000000000000000000001_acc_0.55.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.44it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.56it/s]
+Results for Manual Cutoff (For Validation):  175
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+CIPHER_NAME=GIFT128; num_rounds=7,ml_rounds=7,class_data=2**0,bit_size=16,loop=50,n_test=2**16,validate=False
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^16 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0 | TP_Random Accuracy: 0 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Calculating Accuracies for Real and Random Case: 
+2048/2048 [==============================] - 1s 316us/step - loss: 0.6936 - accuracy: 0.5077
+loss= 0.6935891509056091
+acc= 0.5077056884765625
+All Real Case: 
+2048/2048 [==============================] - 1s 275us/step
+2048/2048 [==============================] - 1s 272us/step
+2048/2048 [==============================] - 1s 254us/step
+2048/2048 [==============================] - 1s 254us/step
+2048/2048 [==============================] - 1s 261us/step
+2048/2048 [==============================] - 1s 251us/step
+2048/2048 [==============================] - 1s 252us/step
+2048/2048 [==============================] - 1s 261us/step
+2048/2048 [==============================] - 1s 268us/step
+2048/2048 [==============================] - 1s 274us/step
+TP Accuracy: 0.443328857421875
+All Random Case: 
+2048/2048 [==============================] - 1s 258us/step
+2048/2048 [==============================] - 1s 255us/step
+2048/2048 [==============================] - 1s 248us/step
+2048/2048 [==============================] - 1s 255us/step
+2048/2048 [==============================] - 1s 252us/step
+2048/2048 [==============================] - 1s 248us/step
+2048/2048 [==============================] - 1s 245us/step
+2048/2048 [==============================] - 1s 241us/step
+2048/2048 [==============================] - 1s 243us/step
+2048/2048 [==============================] - 1s 249us/step
+TP Accuracy: 0.432037353515625
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^2 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.28it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 34.48it/s]
+Prediction Results (All Real Data): 
+[1, 3, 2, 2, 3, 2, 1, 2, 3, 3, 3, 1, 2, 2, 3, 1, 1, 1, 1, 2, 3, 2, 2, 1, 2, 3, 1, 1, 3, 3, 3, 2, 3, 1, 2, 2, 2, 3, 2, 2, 2, 1, 1, 3, 1, 0, 1, 2, 1, 2]
+Prediction Results (All Random Data): 
+[3, 1, 3, 2, 2, 2, 2, 1, 2, 3, 2, 3, 2, 3, 2, 1, 2, 2, 0, 2, 3, 0, 1, 1, 3, 1, 2, 1, 1, 2, 3, 4, 2, 1, 1, 3, 2, 2, 2, 1, 3, 1, 2, 3, 3, 3, 3, 1, 2, 1]
+Average TP in All Real Data: 1.92
+Average TP in All Random Data: 1.96
+Difference in Average TP Data (Real-Random): -0.040000000000000036
+Min TP in All Real Data: 0
+Max TP in All Random Data: 4
+Difference in Min_Real-Max_Random: -4
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 0.045166015625 | Cutoff Using Graph (Algo 3): 2 | Cutoff Calculated (Algo 4): 2 | Data Used: 2^2
+
+Results for Cutoff Using Graph (Algo 3):  2
+TP_Real Count: 14 | TP_Random Count: 35 | Accuracy: 49%
+
+Results for Cutoff Calculated (Algo 4):  2
+TP_Real Count: 14 | TP_Random Count: 35 | Accuracy: 49%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^3 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 36.44it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 36.93it/s]
+Prediction Results (All Real Data): 
+[4, 4, 2, 4, 5, 4, 5, 1, 4, 4, 4, 3, 5, 4, 3, 3, 4, 1, 0, 4, 4, 2, 2, 4, 4, 3, 4, 7, 3, 3, 5, 3, 3, 2, 4, 4, 4, 4, 3, 4, 4, 3, 6, 3, 3, 6, 3, 3, 2, 5]
+Prediction Results (All Random Data): 
+[3, 4, 5, 1, 3, 4, 3, 4, 2, 1, 4, 6, 1, 1, 4, 5, 2, 4, 3, 3, 4, 5, 4, 2, 4, 5, 6, 2, 2, 2, 4, 3, 5, 2, 3, 2, 5, 0, 1, 2, 7, 1, 4, 4, 6, 5, 5, 3, 2, 4]
+Average TP in All Real Data: 3.56
+Average TP in All Random Data: 3.34
+Difference in Average TP Data (Real-Random): 0.2200000000000002
+Min TP in All Real Data: 0
+Max TP in All Random Data: 7
+Difference in Min_Real-Max_Random: -7
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 0.09033203125 | Cutoff Using Graph (Algo 3): 3 | Cutoff Calculated (Algo 4): 4 | Data Used: 2^3
+
+Results for Cutoff Using Graph (Algo 3):  3
+TP_Real Count: 28 | TP_Random Count: 25 | Accuracy: 53%
+
+Results for Cutoff Calculated (Algo 4):  4
+TP_Real Count: 8 | TP_Random Count: 38 | Accuracy: 46%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^4 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 36.70it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.28it/s]
+Prediction Results (All Real Data): 
+[9, 7, 9, 4, 6, 7, 6, 8, 5, 11, 6, 7, 12, 13, 4, 3, 7, 8, 8, 7, 7, 9, 6, 6, 3, 6, 9, 8, 9, 9, 8, 6, 4, 10, 8, 6, 9, 6, 8, 8, 7, 3, 5, 7, 8, 6, 5, 8, 8, 6]
+Prediction Results (All Random Data): 
+[8, 7, 5, 6, 5, 4, 6, 9, 7, 11, 7, 8, 8, 8, 5, 7, 8, 9, 4, 8, 9, 11, 7, 7, 10, 8, 6, 4, 8, 6, 8, 7, 1, 2, 6, 6, 7, 5, 8, 8, 8, 6, 9, 8, 4, 8, 6, 6, 6, 7]
+Average TP in All Real Data: 7.1
+Average TP in All Random Data: 6.84
+Difference in Average TP Data (Real-Random): 0.2599999999999998
+Min TP in All Real Data: 3
+Max TP in All Random Data: 11
+Difference in Min_Real-Max_Random: -8
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 0.1806640625 | Cutoff Using Graph (Algo 3): 7 | Cutoff Calculated (Algo 4): 8 | Data Used: 2^4
+
+Results for Cutoff Using Graph (Algo 3):  7
+TP_Real Count: 22 | TP_Random Count: 29 | Accuracy: 51%
+
+Results for Cutoff Calculated (Algo 4):  8
+TP_Real Count: 11 | TP_Random Count: 43 | Accuracy: 54%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^5 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 39.56it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 39.77it/s]
+Prediction Results (All Real Data): 
+[14, 15, 13, 13, 12, 16, 13, 16, 18, 14, 18, 15, 19, 17, 18, 15, 9, 13, 16, 13, 15, 17, 13, 14, 16, 17, 10, 11, 20, 11, 10, 16, 17, 14, 13, 14, 17, 15, 13, 16, 11, 17, 15, 15, 14, 12, 10, 10, 17, 17]
+Prediction Results (All Random Data): 
+[17, 18, 12, 17, 15, 16, 15, 11, 17, 10, 10, 11, 10, 10, 17, 17, 15, 15, 13, 14, 12, 13, 17, 14, 14, 16, 9, 12, 12, 15, 10, 11, 11, 8, 15, 10, 10, 11, 16, 14, 14, 16, 15, 10, 11, 14, 15, 12, 15, 14]
+Average TP in All Real Data: 14.48
+Average TP in All Random Data: 13.32
+Difference in Average TP Data (Real-Random): 1.1600000000000001
+Min TP in All Real Data: 9
+Max TP in All Random Data: 18
+Difference in Min_Real-Max_Random: -9
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 0.361328125 | Cutoff Using Graph (Algo 3): 13 | Cutoff Calculated (Algo 4): 15 | Data Used: 2^5
+
+Results for Cutoff Using Graph (Algo 3):  13
+TP_Real Count: 32 | TP_Random Count: 23 | Accuracy: 55%
+
+Results for Cutoff Calculated (Algo 4):  15
+TP_Real Count: 19 | TP_Random Count: 39 | Accuracy: 58%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^6 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 38.31it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 39.25it/s]
+Prediction Results (All Real Data): 
+[32, 24, 29, 34, 24, 25, 31, 25, 29, 33, 25, 28, 24, 28, 29, 31, 25, 33, 28, 33, 37, 33, 24, 25, 26, 30, 30, 30, 26, 26, 29, 32, 36, 28, 29, 28, 27, 30, 26, 31, 23, 30, 29, 26, 28, 22, 34, 21, 40, 32]
+Prediction Results (All Random Data): 
+[30, 30, 27, 34, 27, 42, 32, 29, 20, 35, 26, 24, 29, 25, 25, 30, 29, 28, 21, 31, 25, 31, 23, 29, 29, 29, 36, 27, 23, 29, 31, 28, 27, 29, 25, 33, 25, 28, 27, 25, 22, 28, 32, 34, 25, 26, 31, 29, 24, 27]
+Average TP in All Real Data: 28.76
+Average TP in All Random Data: 28.22
+Difference in Average TP Data (Real-Random): 0.5400000000000027
+Min TP in All Real Data: 21
+Max TP in All Random Data: 42
+Difference in Min_Real-Max_Random: -21
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 0.72265625 | Cutoff Using Graph (Algo 3): 31 | Cutoff Calculated (Algo 4): 29 | Data Used: 2^6
+
+Results for Cutoff Using Graph (Algo 3):  31
+TP_Real Count: 12 | TP_Random Count: 42 | Accuracy: 54%
+
+Results for Cutoff Calculated (Algo 4):  29
+TP_Real Count: 20 | TP_Random Count: 35 | Accuracy: 55%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^7 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.45it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 37.39it/s]
+Prediction Results (All Real Data): 
+[53, 68, 61, 57, 58, 52, 57, 65, 48, 57, 50, 62, 59, 44, 59, 50, 53, 52, 43, 53, 55, 56, 61, 59, 50, 66, 52, 51, 51, 59, 62, 62, 50, 43, 59, 57, 58, 62, 62, 57, 56, 64, 66, 38, 51, 63, 58, 58, 67, 54]
+Prediction Results (All Random Data): 
+[47, 61, 61, 62, 49, 52, 63, 59, 63, 57, 55, 62, 49, 51, 50, 49, 57, 58, 51, 57, 51, 48, 52, 51, 58, 53, 63, 46, 53, 52, 53, 58, 68, 58, 56, 49, 42, 61, 52, 52, 51, 54, 63, 51, 51, 56, 61, 62, 57, 51]
+Average TP in All Real Data: 56.16
+Average TP in All Random Data: 54.92
+Difference in Average TP Data (Real-Random): 1.2399999999999949
+Min TP in All Real Data: 38
+Max TP in All Random Data: 68
+Difference in Min_Real-Max_Random: -30
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 1.4453125 | Cutoff Using Graph (Algo 3): 53 | Cutoff Calculated (Algo 4): 57 | Data Used: 2^7
+
+Results for Cutoff Using Graph (Algo 3):  53
+TP_Real Count: 32 | TP_Random Count: 25 | Accuracy: 57%
+
+Results for Cutoff Calculated (Algo 4):  57
+TP_Real Count: 23 | TP_Random Count: 33 | Accuracy: 56%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^8 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 34.70it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.61it/s]
+Prediction Results (All Real Data): 
+[114, 99, 121, 116, 110, 121, 107, 129, 108, 93, 120, 130, 121, 117, 114, 118, 104, 99, 123, 118, 123, 122, 101, 117, 116, 113, 120, 105, 107, 122, 116, 107, 107, 118, 119, 112, 117, 119, 114, 112, 113, 118, 109, 116, 118, 115, 118, 121, 99, 116]
+Prediction Results (All Random Data): 
+[101, 104, 113, 117, 112, 115, 118, 103, 111, 109, 104, 123, 106, 123, 113, 99, 112, 116, 105, 103, 105, 107, 104, 111, 119, 102, 112, 92, 107, 107, 116, 106, 99, 103, 94, 117, 105, 106, 118, 129, 111, 117, 111, 120, 108, 121, 113, 117, 121, 108]
+Average TP in All Real Data: 114.24
+Average TP in All Random Data: 110.26
+Difference in Average TP Data (Real-Random): 3.9799999999999898
+Min TP in All Real Data: 93
+Max TP in All Random Data: 129
+Difference in Min_Real-Max_Random: -36
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 2.890625 | Cutoff Using Graph (Algo 3): 111 | Cutoff Calculated (Algo 4): 113 | Data Used: 2^8
+
+Results for Cutoff Using Graph (Algo 3):  111
+TP_Real Count: 36 | TP_Random Count: 28 | Accuracy: 64%
+
+Results for Cutoff Calculated (Algo 4):  113
+TP_Real Count: 32 | TP_Random Count: 34 | Accuracy: 66%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 30.49it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 32.39it/s]
+Prediction Results (All Real Data): 
+[252, 236, 258, 220, 229, 242, 220, 242, 222, 233, 221, 229, 228, 252, 216, 220, 217, 239, 238, 222, 218, 233, 223, 248, 221, 229, 219, 243, 240, 226, 231, 244, 208, 222, 244, 226, 249, 233, 235, 232, 222, 232, 231, 237, 218, 222, 216, 224, 234, 238]
+Prediction Results (All Random Data): 
+[228, 216, 211, 220, 212, 216, 229, 211, 227, 229, 208, 218, 216, 218, 204, 203, 216, 201, 214, 213, 226, 211, 210, 214, 227, 232, 218, 205, 235, 218, 211, 212, 222, 216, 210, 234, 205, 222, 231, 218, 212, 230, 228, 224, 217, 225, 232, 204, 218, 229]
+Average TP in All Real Data: 230.68
+Average TP in All Random Data: 218.12
+Difference in Average TP Data (Real-Random): 12.560000000000002
+Min TP in All Real Data: 208
+Max TP in All Random Data: 235
+Difference in Min_Real-Max_Random: -27
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 5.78125 | Cutoff Using Graph (Algo 3): 221 | Cutoff Calculated (Algo 4): 225 | Data Used: 2^9
+
+Results for Cutoff Using Graph (Algo 3):  221
+TP_Real Count: 38 | TP_Random Count: 32 | Accuracy: 70%
+
+Results for Cutoff Calculated (Algo 4):  225
+TP_Real Count: 31 | TP_Random Count: 36 | Accuracy: 67%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^10 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 27.25it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 27.64it/s]
+Prediction Results (All Real Data): 
+[448, 441, 468, 454, 489, 468, 467, 463, 451, 450, 441, 478, 475, 452, 481, 464, 466, 443, 470, 423, 500, 459, 473, 452, 480, 478, 477, 429, 446, 474, 450, 425, 453, 427, 461, 462, 468, 473, 471, 437, 460, 458, 449, 470, 447, 479, 476, 444, 459, 458]
+Prediction Results (All Random Data): 
+[445, 431, 420, 465, 448, 430, 434, 421, 431, 457, 426, 433, 434, 439, 451, 433, 431, 440, 432, 461, 432, 450, 445, 445, 435, 461, 418, 430, 424, 420, 444, 455, 408, 456, 438, 440, 460, 422, 426, 413, 441, 439, 438, 422, 407, 436, 434, 458, 462, 465]
+Average TP in All Real Data: 459.74
+Average TP in All Random Data: 437.72
+Difference in Average TP Data (Real-Random): 22.019999999999982
+Min TP in All Real Data: 423
+Max TP in All Random Data: 465
+Difference in Min_Real-Max_Random: -42
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 11.5625 | Cutoff Using Graph (Algo 3): 444 | Cutoff Calculated (Algo 4): 449 | Data Used: 2^10
+
+Results for Cutoff Using Graph (Algo 3):  444
+TP_Real Count: 41 | TP_Random Count: 34 | Accuracy: 75%
+
+Results for Cutoff Calculated (Algo 4):  449
+TP_Real Count: 37 | TP_Random Count: 38 | Accuracy: 75%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^11 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:02<00:00, 21.01it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:02<00:00, 21.27it/s]Prediction Results (All Real Data): 
+[922, 947, 916, 912, 885, 918, 896, 882, 928, 909, 905, 922, 916, 924, 916, 921, 846, 865, 904, 892, 923, 927, 944, 916, 946, 906, 925, 902, 869, 924, 903, 922, 873, 892, 917, 908, 933, 923, 929, 885, 917, 893, 921, 918, 898, 935, 940, 935, 915, 928]
+Prediction Results (All Random Data): 
+[877, 884, 867, 885, 872, 868, 897, 876, 869, 855, 903, 860, 914, 880, 884, 881, 918, 873, 898, 864, 876, 913, 867, 883, 850, 861, 920, 901, 891, 846, 878, 878, 878, 882, 898, 901, 914, 853, 883, 887, 866, 902, 886, 909, 910, 874, 858, 877, 884, 886]
+Average TP in All Real Data: 911.86
+Average TP in All Random Data: 882.74
+Difference in Average TP Data (Real-Random): 29.120000000000005
+Min TP in All Real Data: 846
+Max TP in All Random Data: 920
+Difference in Min_Real-Max_Random: -74
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 23.125 | Cutoff Using Graph (Algo 3): 883 | Cutoff Calculated (Algo 4): 897 | Data Used: 2^11
+
+
+Results for Cutoff Using Graph (Algo 3):  883
+TP_Real Count: 45 | TP_Random Count: 28 | Accuracy: 73%
+
+Results for Cutoff Calculated (Algo 4):  897
+TP_Real Count: 39 | TP_Random Count: 37 | Accuracy: 76%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^12 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:03<00:00, 14.19it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:03<00:00, 14.26it/s]Prediction Results (All Real Data): 
+[1808, 1810, 1843, 1858, 1846, 1859, 1744, 1774, 1840, 1837, 1834, 1791, 1841, 1829, 1898, 1747, 1855, 1839, 1825, 1807, 1883, 1834, 1834, 1798, 1853, 1863, 1793, 1834, 1813, 1868, 1824, 1854, 1837, 1823, 1906, 1838, 1874, 1780, 1857, 1770, 1783, 1832, 1886, 1829, 1836, 1887, 1847, 1783, 1822, 1840]
+Prediction Results (All Random Data): 
+[1760, 1755, 1750, 1764, 1855, 1766, 1731, 1727, 1733, 1841, 1809, 1792, 1745, 1701, 1795, 1703, 1778, 1773, 1751, 1794, 1757, 1713, 1730, 1798, 1742, 1796, 1783, 1749, 1765, 1714, 1741, 1751, 1781, 1755, 1750, 1740, 1726, 1776, 1707, 1775, 1760, 1754, 1748, 1724, 1788, 1739, 1733, 1743, 1762, 1805]
+Average TP in All Real Data: 1831.32
+Average TP in All Random Data: 1758.56
+Difference in Average TP Data (Real-Random): 72.75999999999999
+Min TP in All Real Data: 1744
+Max TP in All Random Data: 1855
+Difference in Min_Real-Max_Random: -111
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 46.25 | Cutoff Using Graph (Algo 3): 1799 | Cutoff Calculated (Algo 4): 1793 | Data Used: 2^12
+
+
+Results for Cutoff Using Graph (Algo 3):  1799
+TP_Real Count: 40 | TP_Random Count: 46 | Accuracy: 86%
+
+Results for Cutoff Calculated (Algo 4):  1793
+TP_Real Count: 41 | TP_Random Count: 42 | Accuracy: 83%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^13 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:05<00:00,  8.77it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:05<00:00,  8.79it/s]Prediction Results (All Real Data): 
+[3644, 3693, 3620, 3641, 3592, 3636, 3634, 3623, 3612, 3651, 3583, 3706, 3695, 3709, 3637, 3543, 3664, 3668, 3642, 3645, 3698, 3679, 3667, 3593, 3649, 3607, 3697, 3656, 3601, 3599, 3619, 3731, 3592, 3649, 3661, 3718, 3686, 3615, 3694, 3610, 3578, 3642, 3676, 3603, 3627, 3721, 3627, 3632, 3668, 3740]
+Prediction Results (All Random Data): 
+[3476, 3558, 3456, 3477, 3447, 3483, 3531, 3552, 3493, 3552, 3504, 3467, 3547, 3542, 3551, 3475, 3459, 3531, 3538, 3559, 3556, 3486, 3499, 3463, 3498, 3580, 3384, 3538, 3536, 3539, 3510, 3496, 3512, 3457, 3561, 3558, 3462, 3472, 3461, 3483, 3502, 3471, 3512, 3532, 3562, 3518, 3515, 3501, 3603, 3459]
+Average TP in All Real Data: 3647.46
+Average TP in All Random Data: 3508.48
+Difference in Average TP Data (Real-Random): 138.98000000000002
+Min TP in All Real Data: 3543
+Max TP in All Random Data: 3603
+Difference in Min_Real-Max_Random: -60
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 92.5 | Cutoff Using Graph (Algo 3): 3573 | Cutoff Calculated (Algo 4): 3586 | Data Used: 2^13
+
+
+Results for Cutoff Using Graph (Algo 3):  3573
+TP_Real Count: 49 | TP_Random Count: 48 | Accuracy: 97%
+
+Results for Cutoff Calculated (Algo 4):  3586
+TP_Real Count: 47 | TP_Random Count: 49 | Accuracy: 96%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | TP_Real Accuracy: 0.443328857421875 | TP_Random Accuracy: 0.432037353515625 | Number of Experiments: 100
+
+./saved_model_paper/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.99it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.98it/s]
+Prediction Results (All Real Data): 
+[7204, 7344, 7350, 7236, 7300, 7207, 7342, 7352, 7292, 7166, 7344, 7342, 7250, 7203, 7300, 7377, 7359, 7245, 7311, 7291, 7366, 7293, 7446, 7245, 7263, 7242, 7275, 7268, 7370, 7282, 7271, 7350, 7256, 7390, 7434, 7388, 7289, 7245, 7316, 7291, 7279, 7306, 7229, 7409, 7255, 7261, 7390, 7317, 7260, 7227]
+Prediction Results (All Random Data): 
+[6980, 7049, 7072, 6926, 7084, 7042, 7077, 6950, 7008, 6900, 7055, 7073, 7058, 7082, 6924, 7042, 6998, 7023, 7011, 7100, 6974, 7052, 7095, 7158, 7069, 7112, 6975, 6935, 7114, 7024, 7051, 6886, 7003, 6942, 7052, 7086, 7047, 7034, 7070, 6960, 7048, 6988, 7039, 6961, 6960, 7012, 6908, 7086, 7025, 6940]
+Average TP in All Real Data: 7300.56
+Average TP in All Random Data: 7021.2
+Difference in Average TP Data (Real-Random): 279.3600000000006
+Min TP in All Real Data: 7166
+Max TP in All Random Data: 7158
+Difference in Min_Real-Max_Random: 8
+Difference in Accuracy: 0.01129150390625 | Data Difference Expected (based on accuracy): 185.0 | Cutoff Using Graph (Algo 3): 7162 | Cutoff Calculated (Algo 4): 7171 | Data Used: 2^14
+
+Results for Cutoff Using Graph (Algo 3):  7162
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
+Results for Cutoff Calculated (Algo 4):  7171
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+CIPHER_NAME=GIFT128; num_rounds=7,ml_rounds=7,class_data=2**0,bit_size=16,loop=50,n_test=2**16,validate=False,beta= 2**14,C_T=7178
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.83it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.82it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.83it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.86it/s]
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.92it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.92it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.85it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.95it/s]
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.97it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.97it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 48 | TP_Random Count: 50 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:09<00:00,  5.02it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.94it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 46 | TP_Random Count: 50 | Accuracy: 96%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.99it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.92it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.86it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.88it/s]
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.95it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.95it/s]
+
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 48 | TP_Random Count: 50 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 16 output bits of GIFT128 | Input Difference for Data:  00000000000000000000000000000001 | Input Difference for ML model:  00000000000000000000000000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 7 | ML Number of Rounds: 7 | Model Accuracy: 0.51 | Number of Experiments: 100
+
+./saved_model/model_0_16_bits_7_00000000000000000000000000000001_acc_0.51.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.95it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.77it/s]
+Results for Manual Cutoff (For Validation):  7178
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=320,loop=50,n_test=2**19,validate=False
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^19 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0 | TP_Random Accuracy: 0 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Calculating Accuracies for Real and Random Case: 
+16384/16384 [==============================] - 16s 974us/step - loss: 0.6931 - accuracy: 0.5023
+loss= 0.6931473612785339
+acc= 0.5022659301757812
+All Real Case: 
+16384/16384 [==============================] - 13s 770us/step
+16384/16384 [==============================] - 13s 763us/step
+16384/16384 [==============================] - 14s 869us/step
+16384/16384 [==============================] - 14s 869us/step
+16384/16384 [==============================] - 15s 899us/step
+16384/16384 [==============================] - 14s 869us/step
+16384/16384 [==============================] - 15s 885us/step
+16384/16384 [==============================] - 14s 882us/step
+16384/16384 [==============================] - 14s 858us/step
+16384/16384 [==============================] - 14s 867us/step
+TP Accuracy: 0.5087299346923828
+All Random Case: 
+16384/16384 [==============================] - 14s 846us/step
+16384/16384 [==============================] - 14s 881us/step
+16384/16384 [==============================] - 13s 816us/step
+16384/16384 [==============================] - 15s 930us/step
+16384/16384 [==============================] - 14s 854us/step
+16384/16384 [==============================] - 13s 790us/step
+16384/16384 [==============================] - 14s 852us/step
+16384/16384 [==============================] - 14s 870us/step
+16384/16384 [==============================] - 14s 883us/step
+16384/16384 [==============================] - 14s 844us/step
+TP Accuracy: 0.5059890747070312
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^2 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.17it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.67it/s]Prediction Results (All Real Data): 
+[4, 3, 3, 3, 0, 1, 1, 1, 2, 1, 2, 3, 2, 3, 3, 1, 2, 1, 3, 4, 1, 2, 1, 3, 0, 2, 3, 0, 0, 2, 3, 3, 1, 4, 2, 3, 1, 2, 2, 2, 3, 1, 1, 2, 3, 2, 1, 3, 2, 2]
+Prediction Results (All Random Data): 
+[3, 2, 2, 1, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 3, 2, 2, 3, 2, 3, 2, 2, 0, 1, 2, 1, 2, 2, 3, 4, 3, 1, 2, 2, 3, 3, 3, 2, 2, 1, 3, 3, 2, 2, 3, 3, 1, 2, 1, 2]
+Average TP in All Real Data: 2
+Average TP in All Random Data: 2.06
+Difference in Average TP Data (Real-Random): -0.06000000000000005
+Min TP in All Real Data: 0
+Max TP in All Random Data: 4
+Difference in Min_Real-Max_Random: -4
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.01096343994140625 | Cutoff Using Graph (Algo 3): 2 | Cutoff Calculated (Algo 4): 3 | Data Used: 2^2
+
+
+Results for Cutoff Using Graph (Algo 3):  2
+TP_Real Count: 18 | TP_Random Count: 36 | Accuracy: 54%
+
+Results for Cutoff Calculated (Algo 4):  3
+TP_Real Count: 3 | TP_Random Count: 49 | Accuracy: 52%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^3 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 44.66it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 49.45it/s]
+Prediction Results (All Real Data): 
+[3, 5, 5, 5, 6, 1, 5, 4, 6, 3, 6, 3, 3, 4, 6, 6, 4, 5, 4, 3, 2, 2, 5, 4, 2, 2, 4, 3, 3, 4, 4, 3, 4, 4, 3, 5, 4, 3, 4, 3, 4, 2, 5, 5, 3, 7, 1, 3, 4, 5]
+Prediction Results (All Random Data): 
+[5, 5, 3, 4, 5, 6, 4, 6, 5, 4, 3, 8, 4, 3, 4, 5, 2, 1, 4, 2, 6, 2, 3, 4, 5, 4, 3, 5, 4, 4, 2, 4, 4, 5, 3, 4, 4, 4, 5, 5, 5, 7, 5, 3, 4, 3, 4, 2, 4, 5]
+Average TP in All Real Data: 3.88
+Average TP in All Random Data: 4.1
+Difference in Average TP Data (Real-Random): -0.21999999999999975
+Min TP in All Real Data: 1
+Max TP in All Random Data: 8
+Difference in Min_Real-Max_Random: -7
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.0219268798828125 | Cutoff Using Graph (Algo 3): 4 | Cutoff Calculated (Algo 4): 5 | Data Used: 2^3
+
+Results for Cutoff Using Graph (Algo 3):  4
+TP_Real Count: 16 | TP_Random Count: 32 | Accuracy: 48%
+
+Results for Cutoff Calculated (Algo 4):  5
+TP_Real Count: 6 | TP_Random Count: 45 | Accuracy: 51%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^4 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 49.29it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 50.12it/s]
+Prediction Results (All Real Data): 
+[9, 7, 10, 10, 5, 7, 4, 8, 8, 8, 10, 10, 8, 4, 13, 5, 8, 5, 8, 7, 6, 10, 7, 9, 10, 7, 8, 12, 8, 7, 9, 3, 9, 7, 7, 7, 8, 9, 7, 9, 8, 8, 8, 8, 10, 5, 6, 6, 5, 8]
+Prediction Results (All Random Data): 
+[10, 12, 5, 10, 8, 9, 6, 8, 12, 8, 10, 8, 9, 8, 9, 4, 4, 13, 7, 8, 6, 8, 7, 9, 8, 5, 13, 8, 3, 5, 9, 9, 11, 9, 10, 9, 8, 9, 8, 9, 8, 7, 10, 9, 7, 10, 7, 9, 10, 8]
+Average TP in All Real Data: 7.7
+Average TP in All Random Data: 8.32
+Difference in Average TP Data (Real-Random): -0.6200000000000001
+Min TP in All Real Data: 3
+Max TP in All Random Data: 13
+Difference in Min_Real-Max_Random: -10
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.043853759765625 | Cutoff Using Graph (Algo 3): 8 | Cutoff Calculated (Algo 4): 9 | Data Used: 2^4
+
+Results for Cutoff Using Graph (Algo 3):  8
+TP_Real Count: 15 | TP_Random Count: 26 | Accuracy: 41%
+
+Results for Cutoff Calculated (Algo 4):  9
+TP_Real Count: 9 | TP_Random Count: 38 | Accuracy: 47%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^5 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:00<00:00, 53.50it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 54.07it/s]
+Prediction Results (All Real Data): 
+[17, 16, 14, 22, 14, 19, 17, 15, 14, 17, 16, 15, 14, 17, 22, 8, 16, 17, 17, 16, 16, 20, 19, 22, 15, 18, 14, 14, 13, 13, 16, 18, 15, 18, 13, 18, 11, 20, 18, 19, 16, 16, 14, 14, 17, 15, 19, 13, 16, 15]
+Prediction Results (All Random Data): 
+[16, 12, 14, 13, 15, 15, 13, 15, 17, 20, 16, 15, 15, 12, 12, 14, 11, 15, 16, 16, 16, 15, 19, 20, 15, 7, 9, 19, 16, 15, 17, 11, 16, 18, 13, 12, 16, 13, 21, 12, 14, 15, 15, 12, 15, 15, 16, 15, 17, 15]
+Average TP in All Real Data: 16.16
+Average TP in All Random Data: 14.82
+Difference in Average TP Data (Real-Random): 1.3399999999999999
+Min TP in All Real Data: 8
+Max TP in All Random Data: 21
+Difference in Min_Real-Max_Random: -13
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.08770751953125 | Cutoff Using Graph (Algo 3): 14 | Cutoff Calculated (Algo 4): 17 | Data Used: 2^5
+
+Results for Cutoff Using Graph (Algo 3):  14
+TP_Real Count: 36 | TP_Random Count: 17 | Accuracy: 53%
+
+Results for Cutoff Calculated (Algo 4):  17
+TP_Real Count: 14 | TP_Random Count: 44 | Accuracy: 58%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^6 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:00<00:00, 50.22it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 51.04it/s]
+Prediction Results (All Real Data): 
+[25, 28, 29, 36, 28, 36, 37, 32, 30, 39, 33, 33, 36, 34, 31, 34, 27, 31, 32, 30, 31, 33, 32, 35, 31, 37, 33, 36, 40, 39, 39, 34, 37, 27, 33, 28, 34, 28, 30, 39, 39, 32, 38, 28, 27, 28, 34, 35, 36, 30]
+Prediction Results (All Random Data): 
+[39, 37, 30, 38, 29, 29, 23, 36, 40, 34, 29, 36, 33, 32, 31, 33, 32, 29, 38, 34, 32, 40, 35, 35, 37, 33, 34, 36, 30, 34, 32, 34, 29, 38, 30, 29, 31, 25, 30, 36, 32, 32, 34, 26, 33, 29, 42, 37, 27, 37]
+Average TP in All Real Data: 32.88
+Average TP in All Random Data: 33.02
+Difference in Average TP Data (Real-Random): -0.14000000000000057
+Min TP in All Real Data: 25
+Max TP in All Random Data: 42
+Difference in Min_Real-Max_Random: -17
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.1754150390625 | Cutoff Using Graph (Algo 3): 33 | Cutoff Calculated (Algo 4): 33 | Data Used: 2^6
+
+Results for Cutoff Using Graph (Algo 3):  33
+TP_Real Count: 22 | TP_Random Count: 27 | Accuracy: 49%
+
+Results for Cutoff Calculated (Algo 4):  33
+TP_Real Count: 22 | TP_Random Count: 27 | Accuracy: 49%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^7 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 45.71it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 46.62it/s]Prediction Results (All Real Data): 
+[62, 67, 65, 68, 53, 68, 72, 69, 54, 59, 69, 69, 79, 62, 65, 65, 67, 61, 59, 55, 64, 54, 63, 62, 66, 62, 67, 65, 68, 79, 64, 61, 68, 65, 76, 62, 64, 67, 71, 66, 62, 62, 65, 70, 63, 59, 65, 73, 54, 62]
+Prediction Results (All Random Data): 
+[62, 63, 66, 60, 71, 59, 78, 66, 65, 62, 68, 48, 65, 65, 68, 62, 68, 58, 72, 71, 63, 59, 62, 58, 61, 63, 63, 62, 61, 57, 55, 62, 71, 62, 67, 71, 72, 64, 75, 70, 61, 65, 58, 63, 61, 70, 75, 65, 53, 63]
+Average TP in All Real Data: 64.74
+Average TP in All Random Data: 64.18
+Difference in Average TP Data (Real-Random): 0.5599999999999881
+Min TP in All Real Data: 53
+Max TP in All Random Data: 78
+Difference in Min_Real-Max_Random: -25
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.350830078125 | Cutoff Using Graph (Algo 3): 65 | Cutoff Calculated (Algo 4): 65 | Data Used: 2^7
+
+
+Results for Cutoff Using Graph (Algo 3):  65
+TP_Real Count: 20 | TP_Random Count: 33 | Accuracy: 53%
+
+Results for Cutoff Calculated (Algo 4):  65
+TP_Real Count: 20 | TP_Random Count: 33 | Accuracy: 53%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^8 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 38.98it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 40.46it/s]Prediction Results (All Real Data): 
+[129, 126, 140, 138, 127, 119, 137, 134, 133, 111, 124, 126, 122, 125, 134, 136, 123, 132, 124, 140, 135, 126, 131, 141, 124, 142, 150, 122, 143, 136, 136, 118, 125, 138, 118, 130, 143, 125, 137, 135, 127, 126, 121, 137, 147, 128, 119, 136, 126, 127]
+Prediction Results (All Random Data): 
+[125, 132, 120, 109, 149, 132, 129, 105, 142, 143, 134, 129, 120, 145, 131, 133, 120, 133, 119, 148, 129, 137, 129, 133, 139, 131, 137, 124, 120, 142, 133, 132, 143, 121, 145, 129, 127, 130, 132, 138, 127, 134, 142, 126, 127, 135, 131, 136, 135, 138]
+Average TP in All Real Data: 130.58
+Average TP in All Random Data: 131.6
+Difference in Average TP Data (Real-Random): -1.0199999999999818
+Min TP in All Real Data: 111
+Max TP in All Random Data: 149
+Difference in Min_Real-Max_Random: -38
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 0.70166015625 | Cutoff Using Graph (Algo 3): 130 | Cutoff Calculated (Algo 4): 130 | Data Used: 2^8
+
+
+Results for Cutoff Using Graph (Algo 3):  130
+TP_Real Count: 24 | TP_Random Count: 20 | Accuracy: 44%
+
+Results for Cutoff Calculated (Algo 4):  130
+TP_Real Count: 24 | TP_Random Count: 20 | Accuracy: 44%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 31.22it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 28.87it/s]Prediction Results (All Real Data): 
+[259, 266, 249, 266, 247, 257, 259, 254, 257, 261, 277, 263, 253, 274, 271, 261, 250, 253, 239, 270, 275, 271, 269, 269, 255, 256, 266, 286, 263, 260, 249, 265, 260, 253, 238, 255, 244, 257, 263, 232, 252, 268, 274, 258, 257, 266, 271, 243, 275, 260]
+Prediction Results (All Random Data): 
+[239, 247, 245, 260, 236, 261, 246, 288, 281, 268, 244, 269, 273, 265, 261, 265, 262, 271, 267, 250, 256, 248, 251, 272, 278, 248, 254, 257, 247, 257, 245, 275, 248, 259, 254, 253, 265, 267, 267, 260, 251, 245, 249, 241, 266, 236, 267, 246, 275, 278]
+Average TP in All Real Data: 259.92
+Average TP in All Random Data: 258.26
+Difference in Average TP Data (Real-Random): 1.660000000000025
+Min TP in All Real Data: 232
+Max TP in All Random Data: 288
+Difference in Min_Real-Max_Random: -56
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 1.4033203125 | Cutoff Using Graph (Algo 3): 260 | Cutoff Calculated (Algo 4): 260 | Data Used: 2^9
+
+
+Results for Cutoff Using Graph (Algo 3):  260
+TP_Real Count: 23 | TP_Random Count: 28 | Accuracy: 51%
+
+Results for Cutoff Calculated (Algo 4):  260
+TP_Real Count: 23 | TP_Random Count: 28 | Accuracy: 51%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^10 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:02<00:00, 20.97it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:02<00:00, 20.97it/s]Prediction Results (All Real Data): 
+[490, 485, 525, 540, 513, 517, 483, 512, 494, 473, 522, 506, 536, 497, 503, 512, 526, 502, 506, 510, 521, 512, 526, 539, 539, 499, 496, 499, 518, 541, 544, 529, 517, 546, 513, 500, 502, 536, 511, 533, 505, 523, 539, 530, 520, 527, 533, 546, 539, 540]
+Prediction Results (All Random Data): 
+[531, 538, 551, 517, 503, 503, 540, 519, 566, 494, 513, 507, 516, 523, 543, 506, 531, 519, 519, 514, 535, 523, 532, 520, 496, 497, 527, 510, 518, 515, 522, 523, 508, 548, 518, 514, 526, 536, 525, 517, 506, 527, 515, 523, 520, 527, 504, 501, 526, 525]
+Average TP in All Real Data: 517.5
+Average TP in All Random Data: 520.74
+Difference in Average TP Data (Real-Random): -3.240000000000009
+Min TP in All Real Data: 473
+Max TP in All Random Data: 566
+Difference in Min_Real-Max_Random: -93
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 2.806640625 | Cutoff Using Graph (Algo 3): 519 | Cutoff Calculated (Algo 4): 520 | Data Used: 2^10
+
+
+Results for Cutoff Using Graph (Algo 3):  519
+TP_Real Count: 24 | TP_Random Count: 25 | Accuracy: 49%
+
+Results for Cutoff Calculated (Algo 4):  520
+TP_Real Count: 23 | TP_Random Count: 27 | Accuracy: 50%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^11 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:03<00:00, 13.26it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:03<00:00, 12.79it/s]Prediction Results (All Real Data): 
+[1047, 1048, 1034, 1012, 1022, 1029, 1041, 1009, 1071, 1013, 1059, 1063, 1055, 1050, 1046, 1000, 1042, 1094, 1021, 1045, 1023, 1078, 1053, 1060, 1056, 1064, 1040, 1015, 1085, 1041, 1061, 1043, 1066, 1047, 1068, 1071, 1059, 1030, 1055, 1035, 1037, 1073, 1027, 1032, 1078, 999, 1032, 991, 1036, 1052]
+Prediction Results (All Random Data): 
+[1034, 1016, 1009, 1042, 1057, 1037, 1052, 1053, 995, 1051, 994, 1040, 1064, 992, 1021, 990, 1024, 1021, 1023, 1019, 1063, 1032, 1039, 1080, 1035, 997, 1031, 1067, 1062, 1024, 1037, 1007, 1013, 1073, 1036, 1025, 1036, 1045, 1036, 1044, 1052, 1000, 1051, 1038, 995, 1007, 1053, 1053, 1039, 1037]
+Average TP in All Real Data: 1044.16
+Average TP in All Random Data: 1032.82
+Difference in Average TP Data (Real-Random): 11.340000000000146
+Min TP in All Real Data: 991
+Max TP in All Random Data: 1080
+Difference in Min_Real-Max_Random: -89
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 5.61328125 | Cutoff Using Graph (Algo 3): 1035 | Cutoff Calculated (Algo 4): 1040 | Data Used: 2^11
+
+
+Results for Cutoff Using Graph (Algo 3):  1035
+TP_Real Count: 33 | TP_Random Count: 23 | Accuracy: 56%
+
+Results for Cutoff Calculated (Algo 4):  1040
+TP_Real Count: 30 | TP_Random Count: 33 | Accuracy: 63%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^12 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:06<00:00,  7.96it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:06<00:00,  7.67it/s]Prediction Results (All Real Data): 
+[2126, 2057, 2114, 2094, 2043, 2073, 2113, 2149, 2088, 2102, 2036, 2125, 2103, 2098, 2014, 2103, 2088, 2062, 2099, 2089, 2114, 2094, 2120, 2074, 2105, 2023, 2093, 2164, 2072, 2157, 2078, 2010, 2136, 2033, 2051, 2096, 2059, 2122, 2092, 2065, 2133, 2071, 2089, 2077, 2093, 2075, 2064, 2100, 2027, 2111]
+Prediction Results (All Random Data): 
+[2047, 2070, 2062, 2070, 2043, 2107, 2082, 2058, 2021, 2105, 2114, 2098, 2047, 2083, 1972, 2028, 2096, 2028, 2064, 2028, 2078, 2024, 2114, 2100, 2115, 2083, 2036, 2041, 2118, 2121, 2131, 2069, 2064, 2107, 2063, 2049, 2110, 2052, 2085, 2033, 2118, 2130, 2100, 2090, 2059, 2116, 2085, 2072, 2063, 2118]
+Average TP in All Real Data: 2087.48
+Average TP in All Random Data: 2075.34
+Difference in Average TP Data (Real-Random): 12.139999999999873
+Min TP in All Real Data: 2010
+Max TP in All Random Data: 2131
+Difference in Min_Real-Max_Random: -121
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 11.2265625 | Cutoff Using Graph (Algo 3): 2070 | Cutoff Calculated (Algo 4): 2079 | Data Used: 2^12
+
+
+Results for Cutoff Using Graph (Algo 3):  2070
+TP_Real Count: 37 | TP_Random Count: 24 | Accuracy: 61%
+
+Results for Cutoff Calculated (Algo 4):  2079
+TP_Real Count: 30 | TP_Random Count: 26 | Accuracy: 56%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^13 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:11<00:00,  4.19it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.58it/s]Prediction Results (All Real Data): 
+[4201, 4203, 4122, 4254, 4173, 4089, 4326, 4145, 4124, 4188, 4158, 4145, 4263, 4226, 4261, 4217, 4178, 4118, 4188, 4177, 4123, 4135, 4254, 4183, 4159, 4214, 4150, 4167, 4183, 4134, 4172, 4163, 4134, 4167, 4128, 4230, 4196, 4159, 4240, 4151, 4128, 4211, 4177, 4157, 4147, 4154, 4224, 4131, 4197, 4225]
+Prediction Results (All Random Data): 
+[4177, 4212, 4134, 4143, 4119, 4041, 4151, 4036, 4098, 4217, 4077, 4067, 4076, 4095, 4081, 4105, 4090, 4110, 4130, 4191, 4097, 4147, 4188, 4076, 4156, 4067, 4129, 4145, 4124, 4106, 4127, 4160, 4125, 4161, 4130, 4085, 4072, 4076, 4188, 4095, 4050, 4180, 4105, 4127, 4028, 4122, 4118, 4242, 4076, 4110]
+Average TP in All Real Data: 4178.98
+Average TP in All Random Data: 4119.24
+Difference in Average TP Data (Real-Random): 59.73999999999978
+Min TP in All Real Data: 4089
+Max TP in All Random Data: 4242
+Difference in Min_Real-Max_Random: -153
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 22.453125 | Cutoff Using Graph (Algo 3): 4165 | Cutoff Calculated (Algo 4): 4157 | Data Used: 2^13
+
+
+Results for Cutoff Using Graph (Algo 3):  4165
+TP_Real Count: 28 | TP_Random Count: 42 | Accuracy: 70%
+
+Results for Cutoff Calculated (Algo 4):  4157
+TP_Real Count: 32 | TP_Random Count: 40 | Accuracy: 72%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:20<00:00,  2.45it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:20<00:00,  2.40it/s]Prediction Results (All Real Data): 
+[8372, 8215, 8350, 8330, 8286, 8365, 8270, 8397, 8341, 8367, 8412, 8327, 8275, 8241, 8367, 8386, 8312, 8351, 8461, 8413, 8236, 8377, 8362, 8332, 8251, 8367, 8240, 8413, 8405, 8364, 8252, 8388, 8366, 8312, 8243, 8379, 8314, 8387, 8334, 8350, 8423, 8367, 8400, 8395, 8318, 8314, 8332, 8303, 8348, 8401]
+Prediction Results (All Random Data): 
+[8258, 8272, 8309, 8251, 8269, 8306, 8174, 8252, 8295, 8285, 8282, 8332, 8351, 8208, 8261, 8310, 8316, 8220, 8282, 8314, 8342, 8214, 8208, 8287, 8244, 8348, 8215, 8325, 8289, 8222, 8331, 8292, 8250, 8291, 8312, 8239, 8267, 8279, 8339, 8196, 8283, 8260, 8384, 8159, 8136, 8203, 8355, 8286, 8273, 8287]
+Average TP in All Real Data: 8342.22
+Average TP in All Random Data: 8273.26
+Difference in Average TP Data (Real-Random): 68.95999999999913
+Min TP in All Real Data: 8215
+Max TP in All Random Data: 8384
+Difference in Min_Real-Max_Random: -169
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 44.90625 | Cutoff Using Graph (Algo 3): 8299 | Cutoff Calculated (Algo 4): 8313 | Data Used: 2^14
+
+
+Results for Cutoff Using Graph (Algo 3):  8299
+TP_Real Count: 40 | TP_Random Count: 35 | Accuracy: 75%
+
+Results for Cutoff Calculated (Algo 4):  8313
+TP_Real Count: 37 | TP_Random Count: 39 | Accuracy: 76%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^15 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:45<00:00,  1.11it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:44<00:00,  1.12it/s]Prediction Results (All Real Data): 
+[16754, 16702, 16754, 16761, 16769, 16685, 16673, 16656, 16750, 16775, 16754, 16669, 16889, 16820, 16830, 16601, 16600, 16686, 16618, 16645, 16652, 16649, 16894, 16749, 16703, 16465, 16751, 16710, 16576, 16758, 16727, 16584, 16562, 16817, 16781, 16722, 16697, 16524, 16688, 16688, 16594, 16692, 16702, 16673, 16702, 16583, 16753, 16729, 16678, 16778]
+Prediction Results (All Random Data): 
+[16504, 16766, 16492, 16471, 16516, 16462, 16486, 16563, 16464, 16629, 16596, 16557, 16495, 16634, 16448, 16627, 16646, 16400, 16544, 16589, 16654, 16573, 16467, 16655, 16541, 16398, 16548, 16586, 16672, 16640, 16617, 16555, 16429, 16688, 16641, 16601, 16513, 16612, 16652, 16631, 16479, 16566, 16372, 16438, 16602, 16517, 16524, 16643, 16504, 16463]
+Average TP in All Real Data: 16699.44
+Average TP in All Random Data: 16553.4
+Difference in Average TP Data (Real-Random): 146.03999999999724
+Min TP in All Real Data: 16465
+Max TP in All Random Data: 16766
+Difference in Min_Real-Max_Random: -301
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 89.8125 | Cutoff Using Graph (Algo 3): 16615 | Cutoff Calculated (Algo 4): 16626 | Data Used: 2^15
+
+
+Results for Cutoff Using Graph (Algo 3):  16615
+TP_Real Count: 41 | TP_Random Count: 35 | Accuracy: 76%
+
+Results for Cutoff Calculated (Algo 4):  16626
+TP_Real Count: 40 | TP_Random Count: 36 | Accuracy: 76%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^16 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:34<00:00,  1.90s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:49<00:00,  2.19s/it]Prediction Results (All Real Data): 
+[33455, 33225, 33344, 33542, 33509, 33459, 33589, 33352, 33305, 33490, 33362, 33394, 33314, 33459, 33396, 33281, 33514, 33417, 33547, 33453, 33424, 33457, 33491, 33586, 33222, 33417, 33218, 33427, 33346, 33324, 33405, 33345, 33422, 33350, 33352, 33527, 33381, 33370, 33467, 33431, 33725, 33255, 33377, 33376, 33640, 33276, 33387, 33597, 33455, 33363]
+Prediction Results (All Random Data): 
+[33061, 33090, 33093, 33066, 33212, 33091, 33123, 32860, 33097, 33014, 33058, 33277, 33351, 32819, 33219, 33017, 32973, 33087, 33224, 33292, 33252, 33165, 32903, 32730, 33113, 33219, 33123, 32991, 33124, 33069, 33035, 32984, 33300, 33182, 32994, 33061, 32979, 33099, 32994, 32990, 33024, 33182, 33208, 33005, 33007, 33065, 33061, 33318, 33061, 33059]
+Average TP in All Real Data: 33416.4
+Average TP in All Random Data: 33086.42
+Difference in Average TP Data (Real-Random): 329.9800000000032
+Min TP in All Real Data: 33218
+Max TP in All Random Data: 33351
+Difference in Min_Real-Max_Random: -133
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 179.625 | Cutoff Using Graph (Algo 3): 33284 | Cutoff Calculated (Algo 4): 33251 | Data Used: 2^16
+
+
+Results for Cutoff Using Graph (Algo 3):  33284
+TP_Real Count: 44 | TP_Random Count: 46 | Accuracy: 90%
+
+Results for Cutoff Calculated (Algo 4):  33251
+TP_Real Count: 47 | TP_Random Count: 44 | Accuracy: 91%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^17 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
+
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [03:46<00:00,  4.54s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [03:40<00:00,  4.41s/it]Prediction Results (All Real Data): 
+[66875, 66862, 66813, 66373, 66707, 66948, 66779, 66932, 66920, 66866, 66676, 66824, 66844, 67094, 66724, 66345, 66850, 66239, 66868, 66821, 67032, 66747, 66357, 66557, 67099, 66862, 66917, 66680, 66969, 67237, 66932, 66973, 66363, 66875, 66498, 66672, 67087, 66545, 66760, 66995, 67126, 67041, 66894, 67084, 66766, 66582, 66873, 66946, 66965, 66725]
+Prediction Results (All Random Data): 
+[66020, 65909, 66420, 66187, 66049, 66200, 65918, 65907, 66172, 66432, 66363, 65930, 66621, 66280, 66286, 66207, 66112, 66010, 65945, 66109, 66104, 66165, 65866, 66210, 66097, 66251, 66356, 66386, 66125, 66187, 66067, 65986, 66020, 66058, 65766, 66452, 65981, 66533, 66280, 66147, 66145, 66147, 65888, 66128, 65883, 66050, 66251, 66145, 66228, 66101]
+Average TP in All Real Data: 66810.38
+Average TP in All Random Data: 66141.6
+Difference in Average TP Data (Real-Random): 668.7799999999988
+Min TP in All Real Data: 66239
+Max TP in All Random Data: 66621
+Difference in Min_Real-Max_Random: -382
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 359.25 | Cutoff Using Graph (Algo 3): 66430 | Cutoff Calculated (Algo 4): 66501 | Data Used: 2^17
+
+
+Results for Cutoff Using Graph (Algo 3):  66430
+TP_Real Count: 45 | TP_Random Count: 46 | Accuracy: 91%
+
+Results for Cutoff Calculated (Algo 4):  66501
+TP_Real Count: 44 | TP_Random Count: 48 | Accuracy: 92%
+
++++++++++++++++++++++++++++++++++++++
+
+
+CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=320,loop=50,n_test=2**19,validate=True,beta= 2**9,C_T=185
+
+
+CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=40,loop=50,n_test=2**19,validate=False
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^19 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0 | TP_Random Accuracy: 0 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Calculating Accuracies for Real and Random Case: 
+16384/16384 [==============================] - 6s 361us/step - loss: 0.6932 - accuracy: 0.5023
+loss= 0.6931726932525635
+acc= 0.5023479461669922
+All Real Case: 
+16384/16384 [==============================] - 5s 314us/step
+16384/16384 [==============================] - 5s 309us/step
+16384/16384 [==============================] - 5s 328us/step
+16384/16384 [==============================] - 5s 312us/step
+16384/16384 [==============================] - 5s 310us/step
+16384/16384 [==============================] - 5s 327us/step
+16384/16384 [==============================] - 5s 286us/step
+16384/16384 [==============================] - 5s 329us/step
+16384/16384 [==============================] - 5s 325us/step
+16384/16384 [==============================] - 5s 325us/step
+TP Accuracy: 0.4789390563964844
+All Random Case: 
+16384/16384 [==============================] - 5s 326us/step
+16384/16384 [==============================] - 5s 291us/step
+16384/16384 [==============================] - 5s 328us/step
+16384/16384 [==============================] - 5s 284us/step
+16384/16384 [==============================] - 5s 325us/step
+16384/16384 [==============================] - 5s 327us/step
+16384/16384 [==============================] - 5s 330us/step
+16384/16384 [==============================] - 5s 316us/step
+16384/16384 [==============================] - 5s 293us/step
+16384/16384 [==============================] - 5s 332us/step
+TP Accuracy: 0.47638702392578125
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^2 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.61it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.83it/s]Prediction Results (All Real Data): 
+[3, 2, 3, 4, 3, 1, 0, 1, 1, 2, 3, 2, 2, 2, 4, 3, 2, 3, 3, 0, 3, 2, 3, 2, 2, 3, 1, 1, 2, 4, 1, 3, 2, 3, 0, 2, 2, 0, 2, 2, 0, 3, 3, 2, 2, 1, 3, 4, 3, 2]
+Prediction Results (All Random Data): 
+[3, 2, 1, 3, 3, 2, 4, 2, 2, 2, 2, 2, 1, 1, 1, 2, 2, 4, 2, 1, 2, 2, 4, 3, 3, 2, 4, 1, 2, 2, 1, 3, 2, 4, 2, 2, 3, 2, 4, 2, 1, 3, 1, 1, 3, 2, 2, 3, 2, 3]
+Average TP in All Real Data: 2.14
+Average TP in All Random Data: 2.26
+Difference in Average TP Data (Real-Random): -0.11999999999999966
+Min TP in All Real Data: 0
+Max TP in All Random Data: 4
+Difference in Min_Real-Max_Random: -4
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.0102081298828125 | Cutoff Using Graph (Algo 3): 2 | Cutoff Calculated (Algo 4): 2 | Data Used: 2^2
+
+
+Results for Cutoff Using Graph (Algo 3):  2
+TP_Real Count: 20 | TP_Random Count: 33 | Accuracy: 53%
+
+Results for Cutoff Calculated (Algo 4):  2
+TP_Real Count: 20 | TP_Random Count: 33 | Accuracy: 53%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^3 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.28it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 53.13it/s]Prediction Results (All Real Data): 
+[2, 4, 5, 4, 2, 5, 4, 4, 4, 4, 5, 1, 6, 6, 3, 2, 4, 4, 4, 4, 3, 2, 2, 0, 3, 3, 4, 3, 2, 4, 4, 5, 6, 3, 3, 5, 1, 2, 3, 1, 5, 4, 4, 6, 2, 4, 5, 5, 3, 5]
+Prediction Results (All Random Data): 
+[3, 5, 4, 5, 5, 4, 2, 3, 2, 4, 4, 4, 6, 2, 4, 4, 5, 4, 2, 6, 3, 6, 5, 3, 1, 2, 3, 6, 2, 2, 4, 1, 2, 3, 3, 7, 3, 4, 5, 3, 3, 5, 4, 3, 7, 4, 7, 3, 6, 3]
+Average TP in All Real Data: 3.58
+Average TP in All Random Data: 3.82
+Difference in Average TP Data (Real-Random): -0.23999999999999977
+Min TP in All Real Data: 0
+Max TP in All Random Data: 7
+Difference in Min_Real-Max_Random: -7
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.020416259765625 | Cutoff Using Graph (Algo 3): 3 | Cutoff Calculated (Algo 4): 4 | Data Used: 2^3
+
+
+Results for Cutoff Using Graph (Algo 3):  3
+TP_Real Count: 29 | TP_Random Count: 23 | Accuracy: 52%
+
+Results for Cutoff Calculated (Algo 4):  4
+TP_Real Count: 13 | TP_Random Count: 35 | Accuracy: 48%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^4 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.56it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.80it/s]
+Prediction Results (All Real Data): 
+[4, 6, 9, 4, 5, 10, 9, 9, 8, 8, 7, 4, 5, 5, 8, 10, 10, 3, 6, 5, 6, 6, 7, 7, 4, 5, 12, 8, 8, 7, 9, 9, 7, 10, 7, 7, 10, 8, 9, 8, 5, 8, 8, 3, 4, 11, 5, 8, 9, 9]
+Prediction Results (All Random Data): 
+[6, 4, 8, 9, 8, 10, 7, 13, 7, 9, 8, 7, 11, 5, 7, 10, 4, 9, 7, 3, 5, 11, 6, 9, 11, 10, 11, 9, 9, 6, 6, 6, 7, 9, 7, 5, 5, 10, 3, 6, 9, 7, 5, 10, 7, 5, 6, 4, 7, 7]
+Average TP in All Real Data: 7.18
+Average TP in All Random Data: 7.4
+Difference in Average TP Data (Real-Random): -0.22000000000000064
+Min TP in All Real Data: 3
+Max TP in All Random Data: 13
+Difference in Min_Real-Max_Random: -10
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.04083251953125 | Cutoff Using Graph (Algo 3): 8 | Cutoff Calculated (Algo 4): 8 | Data Used: 2^4
+
+Results for Cutoff Using Graph (Algo 3):  8
+TP_Real Count: 15 | TP_Random Count: 32 | Accuracy: 47%
+
+Results for Cutoff Calculated (Algo 4):  8
+TP_Real Count: 15 | TP_Random Count: 32 | Accuracy: 47%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^5 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:00<00:00, 52.95it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 54.00it/s]
+Prediction Results (All Real Data): 
+[15, 15, 15, 18, 19, 17, 13, 13, 16, 14, 18, 13, 15, 17, 19, 12, 13, 21, 15, 17, 15, 10, 17, 11, 12, 13, 13, 15, 22, 21, 19, 18, 15, 15, 16, 19, 13, 15, 13, 18, 17, 18, 16, 16, 18, 14, 11, 12, 18, 14]
+Prediction Results (All Random Data): 
+[17, 16, 12, 11, 22, 13, 17, 12, 17, 9, 14, 16, 13, 14, 16, 13, 19, 15, 16, 18, 14, 20, 13, 18, 14, 14, 17, 16, 14, 15, 15, 17, 12, 14, 20, 13, 17, 16, 17, 11, 12, 20, 15, 15, 18, 13, 12, 16, 10, 15]
+Average TP in All Real Data: 15.58
+Average TP in All Random Data: 15.06
+Difference in Average TP Data (Real-Random): 0.5199999999999996
+Min TP in All Real Data: 10
+Max TP in All Random Data: 22
+Difference in Min_Real-Max_Random: -12
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.0816650390625 | Cutoff Using Graph (Algo 3): 16 | Cutoff Calculated (Algo 4): 16 | Data Used: 2^5
+
+Results for Cutoff Using Graph (Algo 3):  16
+TP_Real Count: 19 | TP_Random Count: 35 | Accuracy: 54%
+
+Results for Cutoff Calculated (Algo 4):  16
+TP_Real Count: 19 | TP_Random Count: 35 | Accuracy: 54%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^6 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:00<00:00, 51.03it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:00<00:00, 51.96it/s]Prediction Results (All Real Data): 
+[33, 22, 35, 37, 23, 28, 31, 38, 29, 27, 34, 30, 31, 29, 31, 26, 29, 34, 19, 33, 27, 32, 31, 29, 27, 31, 31, 27, 30, 28, 30, 30, 38, 32, 39, 29, 35, 33, 31, 29, 28, 34, 37, 29, 23, 29, 30, 32, 32, 36]
+Prediction Results (All Random Data): 
+[32, 27, 30, 28, 30, 29, 39, 36, 27, 38, 28, 30, 28, 35, 34, 30, 32, 37, 27, 29, 30, 18, 28, 28, 36, 33, 26, 39, 34, 29, 32, 31, 29, 40, 32, 29, 33, 32, 24, 28, 35, 30, 31, 30, 30, 29, 26, 35, 32, 38]
+Average TP in All Real Data: 30.56
+Average TP in All Random Data: 31.06
+Difference in Average TP Data (Real-Random): -0.5
+Min TP in All Real Data: 19
+Max TP in All Random Data: 40
+Difference in Min_Real-Max_Random: -21
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.163330078125 | Cutoff Using Graph (Algo 3): 29 | Cutoff Calculated (Algo 4): 31 | Data Used: 2^6
+
+
+Results for Cutoff Using Graph (Algo 3):  29
+TP_Real Count: 30 | TP_Random Count: 19 | Accuracy: 49%
+
+Results for Cutoff Calculated (Algo 4):  31
+TP_Real Count: 18 | TP_Random Count: 29 | Accuracy: 47%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^7 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.21it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 48.66it/s]Prediction Results (All Real Data): 
+[59, 61, 61, 57, 56, 54, 64, 65, 66, 70, 52, 69, 59, 69, 52, 69, 62, 62, 64, 63, 54, 64, 60, 53, 62, 60, 57, 66, 60, 65, 63, 63, 59, 68, 65, 62, 61, 66, 62, 71, 61, 54, 56, 64, 47, 58, 56, 68, 61, 64]
+Prediction Results (All Random Data): 
+[52, 52, 64, 69, 69, 51, 50, 57, 76, 73, 64, 69, 69, 69, 60, 61, 70, 53, 56, 70, 61, 63, 57, 64, 58, 53, 63, 56, 54, 62, 51, 56, 63, 70, 60, 54, 64, 66, 62, 64, 61, 63, 64, 54, 68, 59, 62, 67, 67, 63]
+Average TP in All Real Data: 61.28
+Average TP in All Random Data: 61.66
+Difference in Average TP Data (Real-Random): -0.37999999999999545
+Min TP in All Real Data: 47
+Max TP in All Random Data: 76
+Difference in Min_Real-Max_Random: -29
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.32666015625 | Cutoff Using Graph (Algo 3): 61 | Cutoff Calculated (Algo 4): 62 | Data Used: 2^7
+
+
+Results for Cutoff Using Graph (Algo 3):  61
+TP_Real Count: 26 | TP_Random Count: 22 | Accuracy: 48%
+
+Results for Cutoff Calculated (Algo 4):  62
+TP_Real Count: 21 | TP_Random Count: 25 | Accuracy: 46%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^8 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 44.52it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 45.40it/s]Prediction Results (All Real Data): 
+[117, 135, 103, 114, 126, 113, 106, 129, 110, 128, 137, 116, 125, 124, 120, 129, 115, 109, 126, 118, 125, 139, 135, 120, 122, 116, 132, 117, 112, 115, 123, 116, 119, 129, 134, 135, 109, 135, 123, 133, 124, 128, 122, 126, 136, 115, 125, 121, 118, 130]
+Prediction Results (All Random Data): 
+[128, 128, 114, 123, 137, 119, 125, 126, 121, 130, 118, 133, 106, 131, 126, 110, 136, 136, 128, 120, 123, 114, 119, 113, 118, 128, 121, 135, 121, 132, 125, 112, 112, 115, 118, 110, 116, 106, 108, 125, 128, 123, 123, 117, 132, 113, 128, 120, 128, 107]
+Average TP in All Real Data: 122.68
+Average TP in All Random Data: 121.7
+Difference in Average TP Data (Real-Random): 0.980000000000004
+Min TP in All Real Data: 103
+Max TP in All Random Data: 137
+Difference in Min_Real-Max_Random: -34
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 0.6533203125 | Cutoff Using Graph (Algo 3): 120 | Cutoff Calculated (Algo 4): 123 | Data Used: 2^8
+
+
+Results for Cutoff Using Graph (Algo 3):  120
+TP_Real Count: 29 | TP_Random Count: 22 | Accuracy: 51%
+
+Results for Cutoff Calculated (Algo 4):  123
+TP_Real Count: 24 | TP_Random Count: 29 | Accuracy: 53%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^9 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 39.25it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 40.38it/s]
+Prediction Results (All Real Data): 
+[251, 238, 234, 261, 233, 237, 250, 230, 244, 248, 260, 253, 252, 249, 233, 244, 240, 242, 257, 216, 244, 256, 251, 244, 258, 262, 259, 258, 244, 254, 238, 234, 262, 256, 236, 261, 242, 249, 234, 265, 237, 248, 258, 253, 251, 246, 249, 261, 237, 233]
+Prediction Results (All Random Data): 
+[264, 251, 254, 255, 244, 235, 229, 252, 242, 241, 232, 243, 268, 234, 225, 247, 218, 260, 257, 229, 242, 264, 242, 238, 241, 239, 249, 263, 253, 251, 225, 232, 242, 231, 227, 258, 264, 234, 249, 239, 249, 227, 235, 249, 251, 241, 242, 240, 258, 232]
+Average TP in All Real Data: 247.04
+Average TP in All Random Data: 243.74
+Difference in Average TP Data (Real-Random): 3.299999999999983
+Min TP in All Real Data: 216
+Max TP in All Random Data: 268
+Difference in Min_Real-Max_Random: -52
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 1.306640625 | Cutoff Using Graph (Algo 3): 242 | Cutoff Calculated (Algo 4): 245 | Data Used: 2^9
+
+Results for Cutoff Using Graph (Algo 3):  242
+TP_Real Count: 33 | TP_Random Count: 27 | Accuracy: 60%
+
+Results for Cutoff Calculated (Algo 4):  245
+TP_Real Count: 28 | TP_Random Count: 29 | Accuracy: 57%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^10 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:01<00:00, 33.90it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:01<00:00, 35.39it/s]
+Prediction Results (All Real Data): 
+[486, 506, 511, 506, 522, 528, 495, 482, 480, 500, 464, 497, 509, 490, 463, 505, 481, 504, 464, 516, 483, 441, 479, 507, 491, 467, 531, 481, 505, 490, 515, 487, 490, 499, 474, 474, 506, 471, 481, 503, 486, 501, 510, 479, 501, 481, 487, 484, 486, 495]
+Prediction Results (All Random Data): 
+[484, 478, 480, 470, 465, 494, 488, 492, 494, 472, 509, 476, 483, 490, 491, 464, 471, 474, 497, 480, 469, 467, 492, 507, 471, 465, 495, 451, 488, 472, 471, 501, 472, 507, 484, 458, 498, 513, 511, 491, 498, 475, 475, 517, 493, 509, 472, 474, 465, 491]
+Average TP in All Real Data: 491.88
+Average TP in All Random Data: 484.08
+Difference in Average TP Data (Real-Random): 7.800000000000011
+Min TP in All Real Data: 441
+Max TP in All Random Data: 517
+Difference in Min_Real-Max_Random: -76
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 2.61328125 | Cutoff Using Graph (Algo 3): 479 | Cutoff Calculated (Algo 4): 490 | Data Used: 2^10
+
+Results for Cutoff Using Graph (Algo 3):  479
+TP_Real Count: 40 | TP_Random Count: 22 | Accuracy: 62%
+
+Results for Cutoff Calculated (Algo 4):  490
+TP_Real Count: 24 | TP_Random Count: 30 | Accuracy: 54%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^11 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:02<00:00, 22.94it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:02<00:00, 23.29it/s]Prediction Results (All Real Data): 
+[960, 997, 985, 981, 1001, 952, 982, 992, 1005, 984, 991, 972, 950, 956, 991, 970, 993, 934, 977, 983, 1003, 939, 1014, 1006, 988, 972, 988, 1013, 968, 963, 988, 1018, 998, 971, 1004, 949, 1012, 1004, 972, 990, 1003, 944, 957, 989, 978, 963, 1015, 989, 1008, 950]
+Prediction Results (All Random Data): 
+[971, 973, 979, 990, 992, 963, 972, 969, 975, 987, 977, 996, 977, 975, 968, 989, 988, 969, 937, 990, 951, 1002, 992, 981, 997, 939, 981, 976, 984, 990, 959, 1027, 967, 977, 964, 977, 980, 1000, 992, 970, 963, 960, 946, 947, 973, 953, 986, 1006, 951, 966]
+Average TP in All Real Data: 982.24
+Average TP in All Random Data: 975.88
+Difference in Average TP Data (Real-Random): 6.360000000000014
+Min TP in All Real Data: 934
+Max TP in All Random Data: 1027
+Difference in Min_Real-Max_Random: -93
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 5.2265625 | Cutoff Using Graph (Algo 3): 980 | Cutoff Calculated (Algo 4): 979 | Data Used: 2^11
+
+
+Results for Cutoff Using Graph (Algo 3):  980
+TP_Real Count: 30 | TP_Random Count: 31 | Accuracy: 61%
+
+Results for Cutoff Calculated (Algo 4):  979
+TP_Real Count: 30 | TP_Random Count: 30 | Accuracy: 60%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^12 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:03<00:00, 14.76it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:03<00:00, 14.88it/s]
+Prediction Results (All Real Data): 
+[1958, 1938, 1913, 1912, 1971, 2004, 1921, 1949, 2077, 2006, 1986, 1955, 1946, 1987, 1987, 2013, 1915, 1932, 2008, 1959, 1959, 1982, 1898, 1915, 1965, 1941, 1933, 1912, 1951, 1946, 1937, 2019, 1990, 1925, 1935, 1938, 1976, 1948, 1946, 1954, 1994, 1967, 1945, 1940, 1990, 1969, 1941, 2034, 1926, 2015]
+Prediction Results (All Random Data): 
+[1914, 1963, 1993, 1937, 1926, 2021, 1934, 1926, 1971, 1974, 1895, 1984, 1973, 1977, 1948, 1984, 1917, 2000, 1949, 1932, 1986, 1901, 1969, 1893, 1966, 1929, 1959, 2006, 1903, 1953, 1949, 1965, 1929, 1917, 1937, 1949, 1917, 1936, 1971, 1939, 1932, 1936, 1930, 1969, 1921, 1935, 1949, 1954, 1962, 1971]
+Average TP in All Real Data: 1960.56
+Average TP in All Random Data: 1949.02
+Difference in Average TP Data (Real-Random): 11.539999999999964
+Min TP in All Real Data: 1898
+Max TP in All Random Data: 2021
+Difference in Min_Real-Max_Random: -123
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 10.453125 | Cutoff Using Graph (Algo 3): 1959 | Cutoff Calculated (Algo 4): 1957 | Data Used: 2^12
+
+Results for Cutoff Using Graph (Algo 3):  1959
+TP_Real Count: 20 | TP_Random Count: 31 | Accuracy: 51%
+
+Results for Cutoff Calculated (Algo 4):  1957
+TP_Real Count: 23 | TP_Random Count: 30 | Accuracy: 53%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^13 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:05<00:00,  9.01it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:05<00:00,  8.56it/s]Prediction Results (All Real Data): 
+[3864, 3958, 3925, 3953, 3862, 3941, 3921, 3967, 3971, 3895, 3891, 3968, 3806, 3893, 3990, 3967, 3958, 4014, 3910, 3996, 3946, 3997, 3983, 3987, 3926, 3842, 3867, 3948, 3924, 3880, 3825, 4009, 3952, 3916, 3935, 3936, 3913, 3835, 3884, 3916, 3904, 3942, 3931, 3954, 3891, 3911, 3926, 3908, 3896, 3929]
+Prediction Results (All Random Data): 
+[3892, 3955, 3883, 3849, 3930, 3905, 3884, 3897, 3832, 3896, 3842, 3873, 3975, 3816, 3894, 3914, 3827, 3904, 3844, 3933, 3781, 3916, 3904, 3785, 3808, 3849, 3895, 3892, 3882, 3919, 3843, 3891, 3863, 3888, 3867, 3933, 3877, 3837, 3961, 3923, 4013, 3903, 3906, 3752, 3970, 3903, 3891, 3838, 3834, 3875]
+Average TP in All Real Data: 3925.26
+Average TP in All Random Data: 3882.88
+Difference in Average TP Data (Real-Random): 42.38000000000011
+Min TP in All Real Data: 3806
+Max TP in All Random Data: 4013
+Difference in Min_Real-Max_Random: -207
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 20.90625 | Cutoff Using Graph (Algo 3): 3909 | Cutoff Calculated (Algo 4): 3914 | Data Used: 2^13
+
+
+Results for Cutoff Using Graph (Algo 3):  3909
+TP_Real Count: 34 | TP_Random Count: 38 | Accuracy: 72%
+
+Results for Cutoff Calculated (Algo 4):  3914
+TP_Real Count: 31 | TP_Random Count: 39 | Accuracy: 70%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^14 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.90it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:10<00:00,  4.69it/s]Prediction Results (All Real Data): 
+[7908, 7892, 7819, 7800, 7802, 7817, 7790, 7768, 7771, 7859, 7755, 7935, 7831, 7806, 7846, 7840, 7853, 7931, 7860, 7891, 7889, 7926, 7907, 7885, 7985, 7900, 7878, 7769, 7816, 7845, 7903, 7878, 7828, 7813, 7856, 7915, 7901, 7907, 7906, 7869, 7746, 7910, 7886, 7798, 7901, 7920, 7865, 7865, 7841, 7882]
+Prediction Results (All Random Data): 
+[7829, 7772, 7733, 7810, 7830, 7830, 7796, 7853, 7799, 7740, 7719, 7864, 7797, 7893, 7881, 7768, 7809, 7791, 7799, 7804, 7739, 7847, 7721, 7818, 7733, 7874, 7876, 7842, 7863, 7855, 7837, 7760, 7698, 7803, 7794, 7729, 7751, 7740, 7819, 7880, 7793, 7863, 7747, 7822, 7845, 7840, 7717, 7844, 7657, 7940]
+Average TP in All Real Data: 7859.28
+Average TP in All Random Data: 7803.28
+Difference in Average TP Data (Real-Random): 56.0
+Min TP in All Real Data: 7746
+Max TP in All Random Data: 7940
+Difference in Min_Real-Max_Random: -194
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 41.8125 | Cutoff Using Graph (Algo 3): 7843 | Cutoff Calculated (Algo 4): 7827 | Data Used: 2^14
+
+
+Results for Cutoff Using Graph (Algo 3):  7843
+TP_Real Count: 32 | TP_Random Count: 36 | Accuracy: 68%
+
+Results for Cutoff Calculated (Algo 4):  7827
+TP_Real Count: 36 | TP_Random Count: 30 | Accuracy: 66%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^15 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:18<00:00,  2.66it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:19<00:00,  2.51it/s]Prediction Results (All Real Data): 
+[15772, 15865, 15755, 15689, 15638, 15713, 15723, 15782, 15775, 15705, 15716, 15674, 15700, 15633, 15682, 15645, 15677, 15648, 15707, 15619, 15614, 15835, 15733, 15583, 15633, 15680, 15855, 15638, 15599, 15747, 15758, 15673, 15649, 15668, 15600, 15655, 15581, 15633, 15632, 15851, 15761, 15752, 15869, 15677, 15742, 15626, 15766, 15587, 15630, 15654]
+Prediction Results (All Random Data): 
+[15527, 15544, 15636, 15667, 15582, 15572, 15541, 15632, 15747, 15720, 15659, 15737, 15482, 15578, 15656, 15702, 15494, 15524, 15608, 15530, 15439, 15528, 15631, 15640, 15437, 15547, 15499, 15641, 15616, 15516, 15571, 15534, 15653, 15697, 15576, 15758, 15545, 15492, 15674, 15508, 15479, 15411, 15653, 15598, 15697, 15471, 15450, 15614, 15433, 15536]
+Average TP in All Real Data: 15695.98
+Average TP in All Random Data: 15579.64
+Difference in Average TP Data (Real-Random): 116.34000000000015
+Min TP in All Real Data: 15581
+Max TP in All Random Data: 15758
+Difference in Min_Real-Max_Random: -177
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 83.625 | Cutoff Using Graph (Algo 3): 15669 | Cutoff Calculated (Algo 4): 15653 | Data Used: 2^15
+
+
+Results for Cutoff Using Graph (Algo 3):  15669
+TP_Real Count: 29 | TP_Random Count: 42 | Accuracy: 71%
+
+Results for Cutoff Calculated (Algo 4):  15653
+TP_Real Count: 32 | TP_Random Count: 39 | Accuracy: 71%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^16 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [00:38<00:00,  1.31it/s]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [00:37<00:00,  1.35it/s]Prediction Results (All Real Data): 
+[31261, 31323, 31553, 31389, 31389, 31394, 31425, 31515, 31257, 31575, 31575, 31559, 31307, 31586, 31601, 31423, 31388, 31520, 31551, 31330, 31482, 31405, 31713, 31275, 31375, 31554, 31258, 31363, 31430, 31224, 31299, 31542, 31430, 31619, 31435, 31357, 31559, 31222, 31577, 31226, 31492, 31584, 31238, 31416, 31436, 31444, 31422, 31405, 31359, 31612]
+Prediction Results (All Random Data): 
+[31039, 31123, 31244, 31127, 31102, 31059, 31049, 31233, 31355, 31024, 31092, 31313, 31274, 31296, 31160, 31031, 31023, 31010, 31112, 31196, 31079, 31104, 31003, 31099, 31378, 31154, 31206, 31353, 31069, 31087, 31252, 31229, 30909, 31096, 31281, 31046, 31264, 31223, 31244, 31047, 31164, 31115, 30882, 31210, 31251, 31311, 30984, 31126, 30990, 31220]
+Average TP in All Real Data: 31433.48
+Average TP in All Random Data: 31144.76
+Difference in Average TP Data (Real-Random): 288.72000000000116
+Min TP in All Real Data: 31222
+Max TP in All Random Data: 31378
+Difference in Min_Real-Max_Random: -156
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 167.25 | Cutoff Using Graph (Algo 3): 31300 | Cutoff Calculated (Algo 4): 31305 | Data Used: 2^16
+
+
+Results for Cutoff Using Graph (Algo 3):  31300
+TP_Real Count: 41 | TP_Random Count: 45 | Accuracy: 86%
+
+Results for Cutoff Calculated (Algo 4):  31305
+TP_Real Count: 41 | TP_Random Count: 45 | Accuracy: 86%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^17 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:12<00:00,  1.45s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:16<00:00,  1.54s/it]Prediction Results (All Real Data): 
+[62863, 62946, 62907, 63003, 63298, 62955, 63034, 63012, 63219, 62827, 63114, 63112, 62857, 63053, 62867, 62882, 62921, 63018, 62886, 62525, 62671, 62793, 63132, 63094, 62847, 62821, 62730, 62784, 62903, 62995, 63059, 63291, 63071, 62984, 62991, 62911, 62918, 62505, 62812, 62594, 62628, 63060, 62892, 62505, 62915, 62931, 62815, 62954, 62812, 62740]
+Prediction Results (All Random Data): 
+[62397, 62610, 62321, 62487, 62447, 62474, 62175, 62173, 62317, 62309, 62255, 62604, 62502, 62368, 62361, 62106, 62396, 62347, 62141, 62015, 62106, 62472, 62412, 62451, 62495, 62321, 61923, 62341, 62403, 62204, 62085, 62169, 62591, 62454, 62399, 62461, 62044, 62271, 62207, 62292, 62361, 62190, 62019, 62428, 61994, 62405, 62273, 62287, 62196, 62190]
+Average TP in All Real Data: 62909.14
+Average TP in All Random Data: 62304.98
+Difference in Average TP Data (Real-Random): 604.1599999999962
+Min TP in All Real Data: 62505
+Max TP in All Random Data: 62610
+Difference in Min_Real-Max_Random: -105
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 334.5 | Cutoff Using Graph (Algo 3): 62557 | Cutoff Calculated (Algo 4): 62609 | Data Used: 2^17
+
+
+Results for Cutoff Using Graph (Algo 3):  62557
+TP_Real Count: 47 | TP_Random Count: 47 | Accuracy: 94%
+
+Results for Cutoff Calculated (Algo 4):  62609
+TP_Real Count: 46 | TP_Random Count: 49 | Accuracy: 95%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | TP_Real Accuracy: 0.4789390563964844 | TP_Random Accuracy: 0.47638702392578125 | Number of Experiments: 100
+
+./saved_model_paper/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:33<00:00,  3.08s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:31<00:00,  3.03s/it]Prediction Results (All Real Data): 
+[125625, 125448, 125726, 125765, 125702, 125490, 125424, 125696, 125798, 125680, 125527, 125433, 125672, 126062, 125580, 126139, 125731, 126002, 125586, 125819, 125183, 125515, 126009, 126037, 125773, 125798, 125403, 125750, 125622, 125851, 126052, 125967, 125937, 125576, 125909, 125767, 125797, 125801, 126159, 126412, 125548, 125776, 126169, 125792, 125952, 125583, 125570, 125862, 125719, 125689]
+Prediction Results (All Random Data): 
+[124760, 124426, 124407, 124734, 124567, 124576, 125100, 124782, 124674, 125218, 124532, 124302, 124323, 124958, 124601, 124652, 124583, 124421, 124497, 124644, 124693, 124542, 124820, 124450, 124259, 124813, 124406, 124777, 124492, 124581, 124687, 124419, 124190, 124770, 124775, 124691, 124496, 124888, 124777, 124633, 124366, 124477, 124673, 124332, 124442, 124819, 124332, 124772, 124707, 125177]
+Average TP in All Real Data: 125757.66
+Average TP in All Random Data: 124620.26
+Difference in Average TP Data (Real-Random): 1137.4000000000087
+Min TP in All Real Data: 125183
+Max TP in All Random Data: 125218
+Difference in Min_Real-Max_Random: -35
+Difference in Accuracy: 0.002552032470703125 | Data Difference Expected (based on accuracy): 669.0 | Cutoff Using Graph (Algo 3): 125200 | Cutoff Calculated (Algo 4): 125217 | Data Used: 2^18
+
+
+Results for Cutoff Using Graph (Algo 3):  125200
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
+Results for Cutoff Calculated (Algo 4):  125217
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+
+CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=40,loop=50,n_test=2**19,validate=True,beta= 2**9,C_T=185
+
+
+
+
+
