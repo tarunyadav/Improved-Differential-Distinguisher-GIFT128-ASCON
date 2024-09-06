@@ -9,7 +9,7 @@ import gift as gift
 import ascon as ascon
 
 
-wdir = './saved_model/'
+wdir = './saved_models/'
 BLOCK_SIZE = 128
 
 def make_checkpoint(datei):

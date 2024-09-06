@@ -1418,8 +1418,118 @@ TP_Real Count: 44 | TP_Random Count: 48 | Accuracy: 92%
 
 +++++++++++++++++++++++++++++++++++++
 
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Prediction Data: 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | TP_Real Accuracy: 0.5087299346923828 | TP_Random Accuracy: 0.5059890747070312 | Number of Experiments: 100
 
-CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=320,loop=50,n_test=2**19,validate=True,beta= 2**9,C_T=185
+./saved_model_paper/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+  0%|          | 0/50 [00:00<?, ?it/s]2024-09-06 09:43:39.447160: W tensorflow/tsl/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+100%|██████████| 50/50 [04:08<00:00,  4.97s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:09<00:00,  5.00s/it]Prediction Results (All Real Data): 
+[133617, 133364, 133849, 133628, 133530, 133576, 133853, 133649, 133085, 133573, 133742, 133620, 133631, 133875, 133568, 133924, 133534, 133499, 133728, 133314, 133812, 133139, 133506, 133569, 133591, 133354, 133468, 133834, 133550, 133292, 133267, 133511, 132946, 133389, 132957, 132957, 133712, 133374, 133365, 133594, 133128, 134051, 133347, 133373, 133505, 133678, 133391, 133867, 133635, 133637]
+Prediction Results (All Random Data): 
+[132039, 132651, 132180, 132105, 132651, 132258, 132043, 132266, 132297, 132237, 132628, 132094, 132545, 132248, 132085, 132463, 132494, 132371, 132175, 131938, 132622, 132417, 131905, 132071, 132332, 132420, 132740, 132439, 132555, 132319, 131910, 132050, 132499, 132337, 132623, 132270, 132363, 132719, 132371, 132641, 132421, 132347, 132376, 132387, 132356, 132407, 131850, 132361, 132518, 132079]
+Average TP in All Real Data: 133519.16
+Average TP in All Random Data: 132329.46
+Difference in Average TP Data (Real-Random): 1189.7000000000116
+Min TP in All Real Data: 132946
+Max TP in All Random Data: 132740
+Difference in Min_Real-Max_Random: 206
+Difference in Accuracy: 0.0027408599853515625 | Data Difference Expected (based on accuracy): 718.5 | Cutoff Using Graph (Algo 3): 132843 | Cutoff Calculated (Algo 4): 133002 | Data Used: 2^18
+
+Results for Cutoff Using Graph (Algo 3):  132843
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
+Results for Cutoff Calculated (Algo 4):  133002
+TP_Real Count: 47 | TP_Random Count: 50 | Accuracy: 97%
+
++++++++++++++++++++++++++++++++++++++
+
+CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=320,loop=50,n_test=2**19,validate=True,beta= 2**18,C_T=132896
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:39<00:00,  5.60s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:39<00:00,  5.59s/it]
+
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:40<00:00,  5.62s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:41<00:00,  5.63s/it]
+
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:44<00:00,  5.68s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:42<00:00,  5.66s/it]
+
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:44<00:00,  5.68s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:45<00:00,  5.71s/it]
+
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:43<00:00,  5.68s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:44<00:00,  5.70s/it]
+
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 320 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.5027949810028076 | Cutoff (C_T): 132896 | Number of Experiments: 100
+
+./saved_model/model_8_320_bits_4_0000000001_acc_0.5027949810028076.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [04:20<00:00,  5.21s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [04:10<00:00,  5.02s/it]
+Results for Manual Cutoff (For Validation):  132896
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
 
 
 CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=40,loop=50,n_test=2**19,validate=False
@@ -1935,7 +2045,144 @@ TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
 
 CIPHER_NAME=ASCON320; num_rounds=4,ml_rounds=4,class_data=2**0,bit_size=40,loop=50,n_test=2**19,validate=True,beta= 2**9,C_T=185
 
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
 
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.30s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.30s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 48 | TP_Random Count: 50 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:54<00:00,  2.30s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.31s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.30s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.31s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 49 | TP_Random Count: 49 | Accuracy: 98%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:54<00:00,  2.29s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:57<00:00,  2.35s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 49 | TP_Random Count: 48 | Accuracy: 97%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:56<00:00,  2.34s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.32s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:56<00:00,  2.33s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.31s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 49 | TP_Random Count: 50 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.32s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:57<00:00,  2.36s/it]
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.32s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:56<00:00,  2.33s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.31s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.31s/it]
+
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 40 output bits of ASCON320 | Input Difference for Data:  0000000001 | Input Difference for ML model:  0000000001 | Data Required (beta): 2^18 | Classical Data: 2^0 | Total Number of Rounds: 4 | ML Number of Rounds: 4 | Model Accuracy: 0.502252995967865 | Cutoff (C_T): 125161 | Number of Experiments: 100
+
+./saved_model/model_7_40_bits_4_0000000001_acc_0.5022529959678650.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [01:55<00:00,  2.32s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [01:56<00:00,  2.32s/it]
+Results for Manual Cutoff (For Validation):  125161
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
 
 
 

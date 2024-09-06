@@ -10,8 +10,8 @@ import gift as gift
 import ascon as ascon
 
 
-if not os.path.exists("./images"):
-    os.makedirs("./images/")
+if not os.path.exists("./graphs"):
+    os.makedirs("./graphs/")
         
 def prediction(n,input_diff,input_diff_ML,num_rounds,class_data,ml_rounds,acc,accuracy1,accuracy0,bit_size,loop):
     print("Input Parameters--> Model Trained on "+str(bit_size)+" output bits of "+str(CIPHER_NAME)+" | Input Difference for Data:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff])).upper()+ " | Input Difference for ML model:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper()+ " | Prediction Data: 2^" + str(int(math.log(n,2)))+" | Classical Data: 2^" + str(int(math.log(class_data,2))) + " | Total Number of Rounds: " + str(num_rounds) +  " | ML Number of Rounds: " + str(ml_rounds) + " | Model Accuracy: " + str(acc) + " | TP_Real Accuracy: " + str(accuracy1) + " | TP_Random Accuracy: " + str(accuracy0) + " | Number of Experiments: " + str(2*loop)+"\n")
@@ -33,8 +33,8 @@ def prediction(n,input_diff,input_diff_ML,num_rounds,class_data,ml_rounds,acc,ac
             
     with tf.device('/CPU:0'):
         cipher.diff_arr = input_diff_ML
-        model = load_model("./saved_model_paper/model_"+str(model_index)+"_"+str(CIPHER_NAME)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5') 
-        print(str("./saved_model_paper/model_"+str(model_index)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5')+ " Model Loaded!\n")
+        model = load_model("./saved_models_paper/model_"+str(model_index)+"_"+str(CIPHER_NAME)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5') 
+        print(str("./saved_models_paper/model_"+str(model_index)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5')+ " Model Loaded!\n")
         if (accuracy1==0 and accuracy0==0):
             print("Calculating Accuracies for Real and Random Case: ")
             X, Y = cipher.make_td_diff( n , 1 ,ml_rounds,data=2)
@@ -112,7 +112,7 @@ def prediction(n,input_diff,input_diff_ML,num_rounds,class_data,ml_rounds,acc,ac
         plt.ylabel("No. of Prediction > 0.5")
         plt.plot(xdata,ydata_1,'o',label = "TP",linestyle=":",color="green")
         plt.plot(xdata,ydata_0,'d', label = "TN",linestyle=":",color="red")
-        plt.savefig("images/"+str(CIPHER_NAME)+"_"+str(bit_size)+"_bits_" + str(num_rounds)+"_rounds_data_2_" + str(str(int(math.log(n,2)))) + ".png"  )
+        plt.savefig("graphs/"+str(CIPHER_NAME)+"_"+str(bit_size)+"_bits_" + str(num_rounds)+"_rounds_data_2_" + str(str(int(math.log(n,2)))) + ".png"  )
         plt.show()
         
         print("\nResults for Cutoff Using Graph (Algo 3):  " + str(cutoff_graph))
@@ -135,7 +135,7 @@ def cal_accuracy(TP_arr,cutoff,loop):
     return (TP_Real_count+TP_Random_count)*100/(2*loop)
 
 def validation(n,input_diff,input_diff_ML,num_rounds,class_data,ml_rounds,acc,bit_size,C_T,loop):
-    print("Input Parameters--> Model Trained on "+str(bit_size)+" output bits of "+str(CIPHER_NAME)+" | Input Difference for Data:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff])).upper()+ " | Input Difference for ML model:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper()+ " | Prediction Data: 2^" + str(int(math.log(n,2)))+" | Classical Data: 2^" + str(int(math.log(class_data,2))) + " | Total Number of Rounds: " + str(num_rounds) +  " | ML Number of Rounds: " + str(ml_rounds) + " | Model Accuracy: " + str(acc) + " | Number of Experiments: " + str(2*loop)+"\n")
+    print("Input Parameters--> Model Trained on "+str(bit_size)+" output bits of "+str(CIPHER_NAME)+" | Input Difference for Data:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff])).upper()+ " | Input Difference for ML model:  " + str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper()+ " | Data Required (beta): 2^" + str(int(math.log(n,2)))+" | Classical Data: 2^" + str(int(math.log(class_data,2))) + " | Total Number of Rounds: " + str(num_rounds) +  " | ML Number of Rounds: " + str(ml_rounds) + " | Model Accuracy: " + str(acc) + " | Cutoff (C_T): " + str(C_T)+ " | Number of Experiments: " + str(2*loop)+"\n")
     
     if (CIPHER_NAME=="GIFT128"):
         cipher = gift
@@ -155,25 +155,25 @@ def validation(n,input_diff,input_diff_ML,num_rounds,class_data,ml_rounds,acc,bi
         
     with tf.device('/CPU:0'):
         cipher.diff_arr = input_diff_ML
-        model = load_model("./saved_model_paper/model_"+str(model_index)+"_"+str(CIPHER_NAME)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5') 
+        model = load_model("./saved_models_paper/model_"+str(model_index)+"_"+str(CIPHER_NAME)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5') 
         print(str("./saved_model/model_"+str(model_index)+"_"+ str(bit_size)  +'_bits_'+str(ml_rounds)+'_'+ str("".join([hex(i)[2:].zfill(2) for i in input_diff_ML])).upper() + '_acc_'+str(acc).ljust(acc_precision+2,'0')+'.h5')+ " Model Loaded!\n")
         cipher.diff_arr = input_diff
         TP_arr = []
         print("Making Prediction for All Real Data: ")
         for l in trange(0,loop):
             X, Y = cipher.make_td_diff( n , 1 , num_rounds,data=1)
-            if (bit_size==16):
+            if (bit_size<BLOCK_SIZE):
                 P = model.predict(X[:,[i for i in bit_range]],verbose=0)
-            elif (bit_size==128):
+            elif (bit_size==BLOCK_SIZE):
                 P = model.predict(X,verbose=0)
             TP_predictions_count = len(np.where(np.array(P) > 0.5)[0])
             TP_arr.append(TP_predictions_count)
         print("Making Prediction for All Random Data: ")
         for l in trange(0,loop):
             X, Y = cipher.make_td_diff( n , 1 , num_rounds,data=0)
-            if (bit_size==16):
+            if (bit_size<BLOCK_SIZE):
                 P = model.predict(X[:,[i for i in bit_range]],verbose=0)
-            elif (bit_size==128):
+            elif (bit_size==BLOCK_SIZE):
                 P = model.predict(X,verbose=0)
             TP_predictions_count = len(np.where(np.array(P) > 0.5)[0])
             TP_arr.append(TP_predictions_count)
@@ -205,7 +205,7 @@ if __name__ == '__main__':
         num_rounds = 7
         ml_rounds = 7
         class_data = 2**0
-        bit_size = 16
+        bit_size = 16 # 16 or 128
         if (bit_size==BLOCK_SIZE):
             acc_arr = [0,0,0,0,0,.94,.73,.55] # 128 bits - 5/6/7 rounds - precision is upto 2 digit so no need to change as per model
         elif(bit_size==16):
@@ -219,7 +219,7 @@ if __name__ == '__main__':
         input_diff_ML = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01]
         loop = 50
         n_test = 2 ** 16
-        validate = True 
+        validate = True # False for construction and True for validation
         beta = 2 ** 14 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
         C_T = 7178 # C_T calculated using prediction function; anything if validate is False
         
@@ -228,7 +228,7 @@ if __name__ == '__main__':
         num_rounds = 4
         ml_rounds = 4
         class_data = 2**0
-        bit_size = 40
+        bit_size = 40 # 40 or 320
         if (bit_size==BLOCK_SIZE):
             acc_arr = [0,0,0,0,0.5027949810028076] # 320 bits - 4rounds - the accuracy must be according to the model used as precision is too high; as per paper - 0.5027949810028076
         elif(bit_size==40):
@@ -242,9 +242,9 @@ if __name__ == '__main__':
         input_diff_ML = [0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000001]
         loop = 50
         n_test = 2 ** 19
-        validate = False 
-        beta = 2 ** 9 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
-        C_T = 175 # C_T calculated using prediction function; anything if validate is False
+        validate = True # False for construction and True for validation
+        beta = 2 ** 18 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
+        C_T = 125161 # C_T calculated using prediction function; anything if validate is False
     distinguisher(n_test,num_rounds,ml_rounds,class_data,acc,input_diff,input_diff_ML,bit_size,loop,validate,beta,C_T)
 
 
