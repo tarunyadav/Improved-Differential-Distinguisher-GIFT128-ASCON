@@ -5,7 +5,7 @@ Source code for **ML based Improved Differential Distinguisher with High Accurac
 ## Source Code for Improved Differential Distinguisher for GIFT128 and ASCON
 
 ### There are four files in this source code.
-There are 7 files and 2 folders in this repository.
+There are 8 files and 2 folders in this repository.
 
 **Cipher Implementartion:**
 * gift.py
@@ -22,6 +22,9 @@ There are 7 files and 2 folders in this repository.
   
 **TP and TN Graphs**
 * graphs
+
+**Execution Paramerts**
+* ExecutionParameters.txt
 
 **Results**
 * Results_train_distinguisher.txt

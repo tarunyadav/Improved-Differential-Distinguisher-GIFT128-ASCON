@@ -1,0 +1,79 @@
+Execution parameters for improve_distinguisher.py
+
+============= 7 rounds of GIFT128=======
+BLOCK_SIZE = 128
+num_rounds = 7
+ml_rounds = 7
+class_data = 2**0
+bit_size = 16 # 16 or 128
+if (bit_size==BLOCK_SIZE):
+    acc_arr = [0,0,0,0,0,.94,.73,.55] # 128 bits - 5/6/7 rounds - precision is upto 2 digit so no need to change as per model
+elif(bit_size==16):
+    acc_arr = [0,0,0,0,0,.72,.56,.51] # 16 bits - 5/6/7 rounds
+acc = acc_arr[ml_rounds]
+input_diff = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01]
+input_diff_ML = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01]
+loop = 50
+n_test = 2 ** 16
+validate = True # False for construction and True for validation
+beta = 2 ** 14 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
+C_T = 7178 # C_T calculated using prediction function; anything if validate is False
+
+============= 4 rounds of ASCON=======
+BLOCK_SIZE = 320
+num_rounds = 4
+ml_rounds = 4
+class_data = 2**0
+bit_size = 40 # 40 or 320
+if (bit_size==BLOCK_SIZE):
+    acc_arr = [0,0,0,0,0.5027949810028076] # 320 bits - 4rounds - the accuracy must be according to the model used as precision is too high; as per paper - 0.5027949810028076
+elif(bit_size==40):
+    acc_arr = [0,0,0,0,0.5022529959678650] # 40 bits - 4 rounds - the accuracy must be according to the model used as precision is too high; as per paper - 0.5022529959678650
+acc = acc_arr[ml_rounds]
+input_diff = [0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000001]
+input_diff_ML = [0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000000,0x0000000000000001]
+loop = 50
+n_test = 2 ** 19
+validate = True # False for construction and True for validation
+beta = 2 ** 18 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
+C_T = 125161 # C_T calculated using prediction function; anything if validate is False
+
+
+=============Differential-ML for 8 rounds(3-classical+5-ML) of GIFT128=======
+BLOCK_SIZE = 128
+num_rounds = 8
+ml_rounds = 5
+class_data = 2**14
+bit_size = 128 # 16 or 128
+if (bit_size==BLOCK_SIZE):
+    acc_arr = [0,0,0,0,0,.83,.58] # for differential-ML (trained on difference [0x00,0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00])
+elif(bit_size==16):
+    acc_arr = [0,0,0,0,0,.72,.56,.51] # 16 bits - 5/6/7 rounds
+acc = acc_arr[ml_rounds]
+input_diff = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xa0,0x00,0xa0,0x00]
+input_diff_ML = [0x00,0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
+loop = 50
+n_test = 2 ** 16
+validate = False # False for construction and True for validation
+beta = 2 ** 18 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
+C_T = 31598 # C_T calculated using prediction function; anything if validate is False
+
+=============Differential-ML for 8 rounds(2-classical+6-ML) of GIFT128=======
+BLOCK_SIZE = 128
+num_rounds = 8
+ml_rounds = 6
+class_data = 2**10
+bit_size = 128 # 16 or 128
+if (bit_size==BLOCK_SIZE):
+    acc_arr = [0,0,0,0,0,.83,.58] # for differential-ML (trained on difference [0x00,0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00])
+elif(bit_size==16):
+    acc_arr = [0,0,0,0,0,.72,.56,.51] # 16 bits - 5/6/7 rounds
+acc = acc_arr[ml_rounds]
+input_diff = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x11,0x00,0x00,0x00,0x00]
+input_diff_ML = [0x00,0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
+loop = 50
+n_test = 2 ** 16
+validate = False # False for construction and True for validation
+beta = 2 ** 18 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
+C_T = 7178 # C_T calculated using prediction function; anything if validate is False
+
