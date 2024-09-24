@@ -23,7 +23,7 @@ There are 8 files and 2 folders in this repository.
 **TP and TN Graphs**
 * graphs
 
-**Execution Paramerts**
+**Execution Parameters**
 * ExecutionParameters.txt
 
 **Results**
@@ -41,9 +41,9 @@ There are 8 files and 2 folders in this repository.
 
 **Execution:**
 ```python train_distinguisher.py```
-* Model will be saved in saved_models folder
+* Models will be saved in saved_models folder
 
-*Output of Executions is stored in ```Results_train_distinguisher.txt```*
+*Sample Output of Executions with parameters is stored in ```Results_train_distinguisher.txt```*
 
 ### To Contruct the Improved Distinguisher with High Accuracy ###
 **Input Parameters are:**
@@ -65,7 +65,7 @@ There are 8 files and 2 folders in this repository.
 * Model will be used from *saved_models_paper* folder. Change *saved_models_paper* to *saved_models* if new models to be used. 
 * Graphs will be stored in *graphs* folder
 
-*Output of Executions is stored in ```Results_improve_distinguisher.txt```*
+*Sample Output of Executions with parameters is stored in ```Results_improve_distinguisher.txt```*
 
 ## Acknowledgement ##
 1. Shen, D., Song, Y., Lu, Y., Long, S., Tian, S.: Neural differential distinguisher for GIFT-128 and ASCON. Journal of Information Security and Applications, vol. 82, (2024) ([https://github.com/agohr/deep_speck](https://github.com/yijSong/ND-GIFT-ASCON))

@@ -75,5 +75,5 @@ loop = 50
 n_test = 2 ** 16
 validate = False # False for construction and True for validation
 beta = 2 ** 18 # 2^i data complexity(beta) calculated using prediction function; anything if validate is False
-C_T = 7178 # C_T calculated using prediction function; anything if validate is False
+C_T = 112189 # C_T calculated using prediction function; anything if validate is False
 

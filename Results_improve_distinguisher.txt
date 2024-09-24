@@ -2365,12 +2365,40 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [02:56<00:00,  3.52s/it]
+100%|██████████| 50/50 [02:51<00:00,  3.44s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.44s/it]
+
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.44s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.45s/it]
+
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.45s/it]
 Making Prediction for All Random Data: 
 100%|██████████| 50/50 [02:52<00:00,  3.46s/it]
 
 Results for Manual Cutoff (For Validation):  31598
-TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
 
 +++++++++++++++++++++++++++++++++++++
 
@@ -2379,9 +2407,9 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [02:57<00:00,  3.56s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [02:57<00:00,  3.56s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
 
 Results for Manual Cutoff (For Validation):  31598
 TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
@@ -2393,12 +2421,12 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [02:57<00:00,  3.56s/it]
+100%|██████████| 50/50 [02:52<00:00,  3.45s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [02:57<00:00,  3.56s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
 
 Results for Manual Cutoff (For Validation):  31598
-TP_Real Count: 50 | TP_Random Count: 48 | Accuracy: 98%
+TP_Real Count: 50 | TP_Random Count: 47 | Accuracy: 97%
 
 +++++++++++++++++++++++++++++++++++++
 
@@ -2407,11 +2435,67 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [02:58<00:00,  3.57s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [02:58<00:00,  3.57s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.48s/it]
+
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+
 Results for Manual Cutoff (For Validation):  31598
 TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.48s/it]
+
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.48s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:54<00:00,  3.49s/it]
+
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 50 | Accuracy: 100%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  000000000000000000000000A000A000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^14 | Total Number of Rounds: 8 | ML Number of Rounds: 5 | Model Accuracy: 0.83 | Cutoff (C_T): 31598 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_5_00020200000000000000000000000000_acc_0.83.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:54<00:00,  3.48s/it]
+Results for Manual Cutoff (For Validation):  31598
+TP_Real Count: 50 | TP_Random Count: 47 | Accuracy: 97%
 
 +++++++++++++++++++++++++++++++++++++
 
@@ -2709,12 +2793,12 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [03:03<00:00,  3.68s/it]
+100%|██████████| 50/50 [02:52<00:00,  3.44s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [03:04<00:00,  3.68s/it]
+100%|██████████| 50/50 [02:51<00:00,  3.44s/it]
 
 Results for Manual Cutoff (For Validation):  112189
-TP_Real Count: 50 | TP_Random Count: 41 | Accuracy: 91%
+TP_Real Count: 50 | TP_Random Count: 44 | Accuracy: 94%
 
 +++++++++++++++++++++++++++++++++++++
 
@@ -2723,9 +2807,23 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [03:03<00:00,  3.67s/it]
+100%|██████████| 50/50 [02:52<00:00,  3.44s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [03:03<00:00,  3.67s/it]
+100%|██████████| 50/50 [02:52<00:00,  3.45s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 44 | Accuracy: 94%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.45s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.46s/it]
 
 Results for Manual Cutoff (For Validation):  112189
 TP_Real Count: 50 | TP_Random Count: 46 | Accuracy: 96%
@@ -2737,11 +2835,94 @@ Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Differen
 ./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
 
 Making Prediction for All Real Data: 
-100%|██████████| 50/50 [03:04<00:00,  3.68s/it]
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
 Making Prediction for All Random Data: 
-100%|██████████| 50/50 [03:03<00:00,  3.68s/it]
+100%|██████████| 50/50 [02:52<00:00,  3.46s/it]
 
 Results for Manual Cutoff (For Validation):  112189
-TP_Real Count: 50 | TP_Random Count: 48 | Accuracy: 98%
+TP_Real Count: 50 | TP_Random Count: 44 | Accuracy: 94%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.46s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 45 | Accuracy: 95%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.46s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 47 | Accuracy: 97%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 44 | Accuracy: 94%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.48s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 42 | Accuracy: 92%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:54<00:00,  3.49s/it]
+
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 45 | Accuracy: 95%
+
++++++++++++++++++++++++++++++++++++++
+
+Input Parameters--> Model Trained on 128 output bits of GIFT128 | Input Difference for Data:  00000000000000000000001100000000 | Input Difference for ML model:  00020200000000000000000000000000 | Data Required (beta): 2^18 | Classical Data: 2^10 | Total Number of Rounds: 8 | ML Number of Rounds: 6 | Model Accuracy: 0.58 | Cutoff (C_T): 112189 | Number of Experiments: 100
+
+./saved_model/model_8_128_bits_6_00020200000000000000000000000000_acc_0.58.h5 Model Loaded!
+
+Making Prediction for All Real Data: 
+100%|██████████| 50/50 [02:53<00:00,  3.47s/it]
+Making Prediction for All Random Data: 
+100%|██████████| 50/50 [02:52<00:00,  3.46s/it]
+Results for Manual Cutoff (For Validation):  112189
+TP_Real Count: 50 | TP_Random Count: 49 | Accuracy: 99%
 
 +++++++++++++++++++++++++++++++++++++
